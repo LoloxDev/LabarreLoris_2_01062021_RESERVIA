@@ -6,6 +6,47 @@
     src: local('Raleway'), url('police/Raleway/static/Raleway-Medium.ttf') format('woff');
 }
 
+/* Global  */
+
+
+
+/* Nav */
+
+nav
+{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding:10rem 0;
+}
+
+nav ul
+{
+	display:flex;
+	list-style: none;
+}
+
+.nav-link
+{
+	padding:6rem 3rem 0 3rem;
+}
+
+.nav-login
+{
+	padding:6rem 3rem 0 3rem;
+}
+
+.nav-link:hover
+{
+	color:#0065FC;
+	border-top:3px solid #0065FC;
+	transition:0.1s;
+}
+
+
+
+
 strong                            /* TEXTE GRAS */
 {
 	font-size: 1.1em;
@@ -67,74 +108,6 @@ a:link                         /* LIENS APRES CLIQUE */
 }
 
 
-
-#Containeurhead
-{
-	margin:auto;
-	padding-left:0;
-	max-width: 1440px;
-	height:50px;
-}
-
-#Containeur23
-{
-	display:flex;
-	justify-content: flex-end;
-	width:60%;
-	float:left;
-}
-
-nav ul
-{
-	list-style-type: none;
-}
-
-#flex1                          /* BOUTON NAV " HEBERGEMENT " */
-{
-	float:left;
-	margin-top: 20px;
-	padding: 0 2rem;
-}
-
-#flex2                         /* BOUTON NAV "ACTIVITE" */
-{
-	border-top:3px solid #0065FC;
-	height:90%;
-	padding-top:2em;
-	width:160px;
-	text-align:center;
-	color:#0065FC;
-}
-
-
-
-#flex3                         /* BOUTON NAV " S'INSCRIRE " */
-{
-	border-top:3px solid white;
-	height:90%;
-	padding-top:2em;
-	width:140px;
-	text-align:center;
-	color:black;
-}
-
-#flex3:hover                          /* BOUTON " ACTIVITE " DU NAV AU SURVOL */
-{
-	color:#0065FC;
-	border-top:3px solid #0065FC;
-	transition:0.1s;
-}
-
-#flex4
-{
-	font-weight: bold;
-	padding-top:35px;
-}
-
-#flex4 a
-{
-	color:#0065FC;
-}
 
 
 .float                         /* CLASS FLOAT LEFT */
@@ -512,73 +485,65 @@ figure
 
 }
 
-@media screen and (max-width: 630px)
+@media screen and (max-width: 767px)
 
 {
 
-	#Marseille
+	.containeur
 	{
-		width:150px;
-		padding-left: 10px;
+		margin:0;
 	}
 
-	#Rechercher
+	nav
 	{
-		width:115px;
+		position:relative;
+		display:block;
+		padding-bottom: 4rem;
 	}
 
-	#flexfilterbox h2
+	#logo
 	{
-		width:100%;
+		padding-left: 1.5rem;
 	}
 
-	#filter1Box, #filter2Box, #filter3Box
+	nav ul
 	{
-		margin-bottom: 10px;
+		margin-top: 2.5rem;
+		justify-content: space-around;
 	}
 
-	#Containeur23
+	.nav-link
 	{
-		clear:both;
-		width:100%;
-		justify-content:center;
-		margin-top: 50px;
+		padding:1rem 5rem;
 	}
 
-	#flex2, #flex3
+	.login-link
 	{
-		padding-bottom: 30px;
-		margin-bottom: 30px;
+		margin: unset;
 	}
 
-	#flex2
+	nav li:last-child
+	{
+		position:absolute;
+		top:11rem;
+		right:0;
+	}
+
+	.nav-link:nth-child(1),
+	.nav-link:nth-child(2)
 	{
 		border-top:none;
-		border-bottom:3px solid #0065FC;
-		width:50%;
-		margin-left: -15%;
+		border-bottom:2px solid #F2F2F2;
+
 	}
 
-	#flex3
+	.nav-link:hover
 	{
 		border-top:none;
-		width:50%;
-		margin-right: -15%;
-		border-bottom:3px solid white;
+		border-bottom:2px solid #0065FC;
 	}
 
-	#flex3:hover
-	{
-		border-top:none;
-		border-bottom:3px solid #0065FC;
-		transition:none;
-		transition:0.2s;
-	}
 
-	#flex4
-	{
-		text-align: end;
-		margin-right:20px;
-	}
+
 
 }
