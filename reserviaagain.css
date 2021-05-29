@@ -203,67 +203,7 @@ button
 	display:none;
 }
 
-#filter1Icon                                               /* FILTRES */
-{
-	width:38px;
-	height: 36px;
-	border-radius: 60px 60px 60px 60px;
-	padding-top:18px;
-	padding-left:16px;
-	position:relative;
-	bottom:17px;
-	right:5px;
-	background-color:#DEEBFF;
-	color:#0065FC;
-	float:left;
-}
-
-#filter1Box
-{
-	width:180px;
-	height: 35px;
-	border:2px solid silver;
-	border-radius: 100px 100px 100px 100px;
-	text-align:center;
-	padding-top:15px;
-	font-weight: bold;
-	margin-left:2em;
-	cursor:pointer;
-}
-
-
-
-#filter2Icon
-{
-	width:38px;
-	height: 36px;
-	border-radius: 60px 60px 60px 60px;
-	padding-top:18px;
-	padding-left:15px;
-	position:relative;
-	bottom:17px;
-	right:5px;
-	background-color:#DEEBFF;
-	color:#0065FC;
-	float:left;
-}
-
-#filter2Box
-{
-	width:150px;
-	height: 35px;
-	border:2px solid silver;
-	border-radius: 100px 100px 100px 100px;
-	text-align:center;
-	padding-top:15px;
-	font-weight: bold;
-	margin-left:2em;
-	cursor:pointer;
-}
-
-
-
-#filter3Icon
+.filterIcons                                               /* FILTRES ICONES */
 {
 	width:38px;
 	height: 36px;
@@ -278,38 +218,7 @@ button
 	float:left;
 }
 
-#filter3Box
-{
-	width:170px;
-	height: 35px;
-	border:2px solid silver;
-	border-radius: 100px 100px 100px 100px;
-	text-align:center;
-	padding-top:15px;
-	font-weight: bold;
-	margin-left:2em;
-	cursor:pointer;
-}
-
-
-
-
-#filter4Icon
-{
-	width:38px;
-	height: 38px;
-	border-radius: 60px 60px 60px 60px;
-	padding-top:16px;
-	padding-left:16px;
-	position:relative;
-	bottom:17px;
-	right:5px;
-	background-color:#DEEBFF;
-	color:#0065FC;
-	float:left;
-}
-
-#filter4Box
+.filterBox                                              /* FILTRES CONTENEUR */
 {
 	width:220px;
 	height: 35px;
@@ -320,7 +229,57 @@ button
 	font-weight: bold;
 	margin-left:2em;
 	cursor:pointer;
+	margin-bottom: 6px;
 }
+
+.filterBox:nth-child(3)                                              /* EFFETS FILTRES LARGEUR + AU SURVOL */
+{
+	width:150px;
+}
+
+.filterBox:nth-child(3):hover
+{
+	background-color:#F2F7FF;
+	width:160px;
+	transition: 0.3s;
+}
+
+.filterBox:nth-child(2)
+{
+	width:180px;
+}
+
+.filterBox:nth-child(2):hover
+{
+	background-color:#F2F7FF;
+	width:190px;
+	transition: 0.3s;
+}
+
+.filterBox:nth-child(4)
+{
+	width:170px;
+}
+
+.filterBox:nth-child(4):hover
+{
+	background-color:#F2F7FF;
+	width:180px;
+	transition: 0.3s;
+}
+
+.filterBox:nth-child(5)
+{
+	width:220px;
+}
+
+.filterBox:nth-child(5):hover
+{
+	background-color:#F2F7FF;
+	width:230px;
+	transition: 0.3s;
+}
+
 
 #flexfilterbox                                                /* FILTRES FLEXBOX */
 {
@@ -330,37 +289,6 @@ button
 	flex-wrap: wrap;
 	max-width: 99%;
 }
-
-#filter1Box:hover                                              /* FILTRES EFFETS SURVOL */
-{
-	background-color:#F2F7FF;
-	width:190px;
-	transition: 0.3s;
-}
-
-
-#filter2Box:hover
-{
-	background-color:#F2F7FF;
-	width:160px;
-	transition: 0.3s;
-}
-
-#filter3Box:hover
-{
-	background-color:#F2F7FF;
-	width:180px;
-	transition: 0.3s;
-}
-
-#filter4Box:hover
-{
-	background-color:#F2F7FF;
-	width:230px;
-	transition: 0.3s;
-}
-
-
 
 
                   /* ------------------------------------------- MILLIEU DE PAGE ------------------------------------------------ */
@@ -523,6 +451,7 @@ figure
 	{
 		padding:1rem 5rem;
         width:1rem;
+		margin: unset;
 
 	}
 
