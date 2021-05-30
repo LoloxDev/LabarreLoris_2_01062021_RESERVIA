@@ -6,9 +6,6 @@
     src: local('Raleway'), url('police/Raleway/static/Raleway-Medium.ttf') format('woff');
 }
 
-/* Global  */
-
-
 
 /* Nav */
 
@@ -47,19 +44,22 @@ nav ul
 }
 
 
+/* TEXTE GRAS */
 
-
-strong                            /* TEXTE GRAS */
+strong                            
 {
 	font-size: 1.1em;
 }
 
+/* CORPS */
 
-body                      /* CORP */
+body                      
 {
 	font-family: 'Raleway';
 	margin:0;
 }
+
+/* CORPS CONTENEUR*/
 
 .containeur
 {
@@ -69,26 +69,31 @@ body                      /* CORP */
     box-sizing: border-box;
 }
 
+/* SECTIONS */
 
-section                   /* SECTIONS */
+section                   
 {
 clear: both;
 font-size: 0.95em;
 }
 
+/* ICONES */
 
-i                         /* ICONES */
+i                         
 {
 	margin-right: 1em;
 }
 
+/* TITRES H1*/
 
-h1                        /* TITRES H1*/
+h1                        
 {
 	font-size: 2em;
 	margin-bottom:8px;
 	margin-top:80px;
 }
+
+/* EFFETS DES CARTES AU SURVOL */
 
 article:hover
 {
@@ -96,33 +101,25 @@ article:hover
 	transform: scale(1.015);
 }
 
+/* LIENS DEJA VU */
 
 a:visited
 {
 	color:black;
 }
 
+/* LIENS APRES CLIQUE */
 
-
-a:link                         /* LIENS APRES CLIQUE */
+a:link                         
 {
 	text-decoration: none;
 }
 
-
-
-
-.float                         /* CLASS FLOAT LEFT */
-{
-	float:left;
-	margin-top:2em;
-	margin-bottom:2em;
-}
-
+/* ICONES */
 
 #logoinfo
 {
-	color:#0065FC;                                                  /* ICONES */
+	color:#0065FC;                                                  
 	border:1px solid silver;
 	float:left;
 	width:20px;
@@ -152,9 +149,7 @@ a:link                         /* LIENS APRES CLIQUE */
 	letter-spacing: -10px;
 }
 
-
-
-#GPS                                            /* GPS ( BARRE DE RECHERCHE ) */
+#GPS
 {
 	float:left;
 	height:33px;
@@ -167,7 +162,11 @@ a:link                         /* LIENS APRES CLIQUE */
     border-radius: 15px 0px 0px 15px;
 }
 
-#Marseille                                        /* ZONE DE TEXTE ( BARRE DE RECHERCHE ) */
+/* -------------------------------------- ZONE DE RECHERCHE ----------------------------------- */
+
+/* BARRE DE RECHERCHE */
+
+#Marseille                                        
 {
 	float:left;
 	height:44px;
@@ -180,11 +179,9 @@ a:link                         /* LIENS APRES CLIQUE */
 
 }
 
+/* BOUTON RECHERCHER */
 
-
-
-
-.Rechercher                                       /* BOUTON RECHERCHER ( BARRE DE RECHERCHE ) */
+.Rechercher                                     
 {
 	float:left;
 	height:47px;
@@ -199,12 +196,18 @@ a:link                         /* LIENS APRES CLIQUE */
 	font-family: 'Raleway';
 }
 
+/* BOUTON RECHERCHER ( LOUPE ) */
+
 button
 {
 	display:none;
 }
 
-.filterIcons                                               /* FILTRES ICONES */
+/* --------------------------------------------FILTRES------------------------------------------------- */
+
+/* FILTRES ICONES */
+
+.filterIcons                                               
 {
 	width:38px;
 	height: 36px;
@@ -219,7 +222,9 @@ button
 	float:left;
 }
 
-.filterBox                                              /* FILTRES CONTENEUR */
+/* FILTRES CONTENEUR */
+
+.filterBox                                              
 {
 	width:220px;
 	height: 35px;
@@ -233,7 +238,9 @@ button
 	margin-bottom: 6px;
 }
 
-.filterBox:nth-child(3)                                              /* EFFETS FILTRES LARGEUR + AU SURVOL */
+/* EFFETS FILTRES LARGEUR + AU SURVOL */
+
+.filterBox:nth-child(3)                                              
 {
 	width:150px;
 }
@@ -281,8 +288,9 @@ button
 	transition: 0.3s;
 }
 
+/* FILTRES FLEXBOX */
 
-#flexfilterbox                                                /* FILTRES FLEXBOX */
+#flexfilterbox                                                
 {
 	display:flex;
 	width:1100px;
@@ -292,13 +300,16 @@ button
 }
 
 
-                  /* ------------------------------------------- MILLIEU DE PAGE ------------------------------------------------ */
+/* ------------------------------------------- SECTION HEBERGEMENT A MARSEILLE ------------------------------------------------ */
+
+/* FLEX DES DEUX SECTIONS */
 
 #HostSection
 {
 	display:flex;
 }
 
+/* 2 SECTIONS */
 
 #HostMarseille, #HostPop
 {
@@ -307,7 +318,7 @@ button
     padding: 2rem;
 }
 
-
+/* CONTENEUR SECTION HEB MARSEILLE */
 
 #HostMarseille
 {
@@ -318,6 +329,8 @@ button
 	margin-right: 30px;
 }
 
+/* TITRE DE SECTION */
+
 .TitleofSection
 {
 	width:100%;
@@ -325,6 +338,8 @@ button
 	margin-bottom:50px;
 	margin-top:0px;
 }
+
+/* CARTES DE HEB MARSEILLE */
 
 .HostCartesMarseille
 {
@@ -342,6 +357,8 @@ button
 	margin-right: 15px;
 }
 
+/* IMG DANS CARTES HEB MARSEILLE */
+
 .hostingCardFigureImgMarseille
 {
 	height: 7rem;
@@ -352,16 +369,22 @@ button
     border-radius: 1rem 1rem 0 0;
 }
 
+/* CONTENEUR FIGCAPTION CARTES HEB MARSEILLE */
+
 .hostingCardFigcaptionMarseille
 {
 	margin-left: 10px;
 }
+
+/* TITRE DANS FIGCAPTION CARTES HEB MARSEILLE */
 
 .hostingCardFigcaptionTitleMarseille
 {
 	margin-top: 0.2em;
 	margin-bottom: 0;
 }
+
+/* DESCRIPTION DANS FIGCAPTION CARTES HEB MARSEILLE */
 
 .HostCartesDescMarseille
 {
@@ -370,12 +393,17 @@ button
 	margin-bottom:0;
 }
 
+/* DIV POUR "AFFICHER PLUS" */
+
 .clear
 {
 	display:block;
 	width:100%;
 }
-/*------------------------------------------------------------------------LES PLUS POP----------------------------------------------------------------------------------------*/
+/*---------------------------------------------------SECTION LES PLUS POPULAIRES-------------------------------------------------------------------------*/
+
+/* CONTENEUR SECTION LES PLUS POP */
+
 #HostPop
 {
 	display:flex;
@@ -384,6 +412,8 @@ button
 	justify-content:center;
 	width:29%;
 }
+
+/* CONTENEUR CARTES LES PLUS POP */
 
 .HostCartesPop
 {
@@ -401,16 +431,22 @@ button
 	margin-right: 15px;
 }
 
+/* CONTENEUR CARTES POP */
+
 .HostFigCartesPop
 {
 	display:flex;
 }
+
+/* CONTENEUR FLEX DES FIGCAPTION */
 
 .figcaptionflex
 {
 	display:flex;
 	flex-direction: column;
 }
+
+/* CONTENEUR IMAGE CARTES POP */
 
 .hostingCardFigureImgPop
 {
@@ -421,16 +457,22 @@ button
     border-radius: 1rem 0rem 0rem 1rem;
 }
 
+/* CONTENEUR FIGCAPTION CARTES POP */
+
 .hostingCardFigcaptionPop
 {
 	margin-left: 10px;
 }
+
+/* TITRES FIGCAPTION CARTES POP */
 
 .hostingCardFigcaptionTitlePop
 {
 	margin-top: 0.2em;
 	margin-bottom: 0;
 }
+
+/* DESCRIPTION FIGCAPTION CARTES POP */
 
 .HostCartesDescPop
 {
@@ -439,17 +481,18 @@ button
 	margin-bottom:0;
 }
 
+/* ETOILES DE FICAPTION CARTES POP */
+
 .etoiles
 {
 	margin-top:35px;
 }
 
-.HostCartesPop:last-child
-{
-}
+/* ---------------------------------------------FOOTER--------------------------------------------------- */
 
+/* CONTENEUR FOOTER */
 
-#footer                             /* ------------------------------FOOTER------------------------------- */
+#footer      
 {
 	width:100%;
 	height:200px;
@@ -459,20 +502,24 @@ button
 	justify-content: space-around;
 }
 
-footer a                             /* -----FOOTER LIENS----- */
+/* FOOTER LIENS */
+
+footer a                             
 {
 	color:black;
 	font-size:0.9em;
 }
 
-.FooterFlex                                                 /* -------FOOTER FLEX ( MISE EN PAGE )------- */
+/* FOOTER FLEX */
+
+.FooterFlex                                                 
 {
 	display:flex;
 	flex-direction: column;
 }
 
 
-
+/* figures */
 
 figure
 {
@@ -484,15 +531,15 @@ figure
 
 
 
-                                /* --------------------------------------------RESPONSIVE---------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------RESPONSIVE------------------------------------------------------------------------------------------------- */
 
 
 @media screen and (max-width: 1400px)
 
-{
+{          
 	#HostSection
 	{
-		flex-direction: column-reverse;
+		 flex-direction: column-reverse;
 	}
 
 	#HostPop
