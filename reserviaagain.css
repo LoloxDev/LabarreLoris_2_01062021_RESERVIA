@@ -133,6 +133,7 @@ a:link                         /* LIENS APRES CLIQUE */
 	position:relative;
 	bottom:8px;
 	margin-right: 20px;
+	margin-top:14px;
 }
 
 .etoilebleu
@@ -317,11 +318,6 @@ button
 	margin-right: 30px;
 }
 
-#HostPop
-{
-	width:30%;
-}
-
 .TitleofSection
 {
 	width:100%;
@@ -376,7 +372,80 @@ button
 
 .clear
 {
+	display:block;
 	width:100%;
+}
+/*------------------------------------------------------------------------LES PLUS POP----------------------------------------------------------------------------------------*/
+#HostPop
+{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: column;
+	justify-content:center;
+	width:29%;
+}
+
+.HostCartesPop
+{
+	background-color: white;
+	border-radius: 1.25rem;
+	box-shadow: 0 0 16px #0000002e;
+	transition-duration: 0.1s;
+	cursor: pointer;
+	width:98%;
+	padding:0.4em;
+	height:130px;
+	min-width: 230px;
+	max-width:500px;
+	margin-bottom: 30px;
+	margin-right: 15px;
+}
+
+.HostFigCartesPop
+{
+	display:flex;
+}
+
+.figcaptionflex
+{
+	display:flex;
+	flex-direction: column;
+}
+
+.hostingCardFigureImgPop
+{
+	height: 8.1rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 40%;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.hostingCardFigcaptionPop
+{
+	margin-left: 10px;
+}
+
+.hostingCardFigcaptionTitlePop
+{
+	margin-top: 0.2em;
+	margin-bottom: 0;
+}
+
+.HostCartesDescPop
+{
+	margin-top: 0.1em;
+	margin-left: 10px;
+	margin-bottom:0;
+}
+
+.etoiles
+{
+	margin-top:35px;
+}
+
+.HostCartesPop:last-child
+{
 }
 
 
@@ -421,6 +490,54 @@ figure
 @media screen and (max-width: 1400px)
 
 {
+	#HostSection
+	{
+		flex-direction: column-reverse;
+	}
+
+	#HostPop
+	{
+		width:90%;
+		margin-bottom: 20px;
+	}
+
+	#HostMarseille
+	{
+		width:90%;
+	}
+
+	.HostCartesPop
+	{
+		width:95%;
+		max-width: 100%;
+	}
+
+	@media screen and (min-width: 1013px)
+	{
+		.HostCartesPop
+		{
+			width:30%;
+			margin-bottom: unset;
+		}
+
+		#HostPop
+		{
+			flex-direction: unset;
+		}
+	}
+
+}
+
+@media screen and (max-width: 1000px)
+
+{
+	.HostCartesMarseille
+	{
+		min-width: 230px;
+		width:45%;
+		transition:0.8s;
+		margin-bottom:25px;
+	}
 
 }
 
@@ -548,10 +665,25 @@ figure
 
 	.HostCartesMarseille
 	{
-		min-width: 400px;
-		width:40%;
+		min-width: 230px;
+		width:80%;
 		transition:0.8s;
+		margin-bottom:25px;
 	
+	}
+
+	#HostMarseille
+	{
+		width:100%;
+		padding:0;
+		margin:0;
+	}
+
+	#HostSection
+	{
+		width:100%;
+		margin:0;
+
 	}
 }
 
