@@ -332,6 +332,7 @@ button
 #HostSection
 {
 	display:flex;
+	align-items: flex-end;
 }
 
 /* 2 SECTIONS */
@@ -360,7 +361,7 @@ button
 {
 	width:100%;
 	height:1.5%;
-	margin-bottom:50px;
+	margin-bottom:30px;
 	margin-top:0px;
 }
 
@@ -424,6 +425,7 @@ button
 {
 	display:block;
 	width:100%;
+	margin:8px;
 }
 /*---------------------------------------------------SECTION LES PLUS POPULAIRES-------------------------------------------------------------------------*/
 
@@ -433,11 +435,23 @@ button
 {
 	display:flex;
 	flex-wrap:wrap;
-	flex-direction: column;
-	justify-content:center;
+	justify-content:space-around;
 	width:29%;
 }
 
+.TitleGraph
+{
+	display:flex;
+	flex-direction: row;
+	align-content: space-between;
+	width:100%;
+	font-size: 1.1em;
+}
+
+.TitleGraph i
+{
+	margin-top: 7px;
+}
 /* CONTENEUR CARTES LES PLUS POP */
 
 .HostCartesPop
@@ -451,9 +465,12 @@ button
 	padding:0.4em;
 	height:130px;
 	min-width: 230px;
-	max-width:500px;
 	margin-bottom: 30px;
-	margin-right: 15px;
+}
+
+.HostCartesPop:last-child
+{
+	margin-bottom: 0;
 }
 
 /* CONTENEUR CARTES POP */
@@ -660,6 +677,7 @@ figure
 	{
 		width:unset;
 		margin-bottom: 20px;
+		flex-direction: row;
 	}
 
 	#HostMarseille
@@ -679,11 +697,6 @@ figure
 		{
 			width:30%;
 			margin-bottom: unset;
-		}
-
-		#HostPop
-		{
-			flex-direction: unset;
 		}
 	}
 
@@ -881,7 +894,8 @@ figure
 
 	.testflex
 	{
-		width:85%;
+		width:100%;
+		margin-right: unset;
 		transition: 0.6s;
 	}
 
@@ -895,7 +909,8 @@ figure
 
 	.testflex2, .testflex3
 	{
-		width:85%;
+		width:100%;
+		margin-right: unset;
 		margin-bottom: 1rem;
 		transition: 0.6s;
 	}
