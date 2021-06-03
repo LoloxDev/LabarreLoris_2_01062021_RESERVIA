@@ -72,7 +72,7 @@ body
 
 .containeur
 {
-    max-width: 1440px;
+    max-width: 95%;
     margin: auto;
     padding: 0 2rem;
     box-sizing: border-box;
@@ -524,7 +524,7 @@ button
 .testflex
 {
 	box-shadow: 0 0 16px #0000002e;
-	width:21rem;
+	width:50%;
 	height:550px;
 	display:flex;
 	flex-direction:column;
@@ -577,7 +577,7 @@ button
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width:21rem;
+	width:45%;
 	margin-right: 2.2rem;
 }
 
@@ -638,30 +638,39 @@ figure
 
 /* ----------------------------------------------------------------RESPONSIVE----------------------------------------------------------------------------------- */
 
+@media screen and (max-width: 1500px)
 
+{        
+	.containeur
+	{
+		max-width:100%;
+	}
+
+}
 @media screen and (max-width: 1400px)
 
-{          
+{        
 	#HostSection
 	{
 		 flex-direction: column-reverse;
+		 width:100%;
 	}
 
 	#HostPop
 	{
-		width:95%;
+		width:unset;
 		margin-bottom: 20px;
 	}
 
 	#HostMarseille
 	{
-		width:95%;
+		width:unset;
+		margin-right: unset;
 	}
 
 	.HostCartesPop
 	{
 		width:95%;
-		max-width: 100%;
 	}
 
 	@media screen and (min-width: 1013px)
@@ -852,6 +861,7 @@ figure
 		width:100%;
 		transition:0.6s;
 		margin-bottom:25px;
+		margin-right: 0;
 	
 	}
 
@@ -895,6 +905,7 @@ figure
 		justify-content: center;
 		
 	}
+
 }
 
 @media screen and (max-width: 400px)
@@ -908,14 +919,13 @@ figure
 
 	#HostMarseille
 	{
-		width:110%;
+		width:100%;
 		margin-left:-10px;
 	}
 
 	#HostPop
 	{
-		width:113%;
-		margin-left:-36px;
+		width:100%;
 		border-radius: unset;
 		padding:1rem;
 		transition:0.3s;
