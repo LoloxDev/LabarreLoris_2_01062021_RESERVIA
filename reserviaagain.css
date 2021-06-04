@@ -614,14 +614,27 @@ button
 
 /* CONTENEUR FOOTER */
 
-#footer      
+#footer     
 {
 	width:100%;
-	height:200px;
-	clear:both;
 	background-color:#F2F2F2;
+	margin-top: 6rem;
+	height:10rem;
+}
+
+.FooterFLex
+{
 	display:flex;
-	justify-content: space-around;
+	align-items: flex-start;
+	justify-content: space-between;
+	width:70%;
+	margin-left: 70px;
+	height:100%;
+}
+
+#footer li
+{
+	list-style: none;
 }
 
 /* FOOTER LIENS */
@@ -634,10 +647,17 @@ footer a
 
 /* FOOTER FLEX */
 
-.FooterFlex                                                 
+.FooterOptions                                                
 {
 	display:flex;
 	flex-direction: column;
+	justify-content: space-evenly;
+	height:100%;
+}
+
+.FooterFlex:first-child
+{
+	
 }
 
 
@@ -669,8 +689,10 @@ figure
 {        
 	#HostSection
 	{
-		 flex-direction: column-reverse;
-		 width:100%;
+		display:flex;
+		align-items: center;
+		flex-direction: column-reverse;
+		width:100%;
 	}
 
 	#HostPop
@@ -780,7 +802,7 @@ figure
 
 	.nav-link
 	{
-		padding:1rem 3.3rem;
+		padding:1rem 3rem;
         width:1rem;
 		margin: unset;
 
@@ -918,8 +940,31 @@ figure
 	.ContaineurAllAct
 	{
 		justify-content: center;
-		
 	}
+
+	#footer
+	{
+		height:unset;
+	}
+
+	.FooterFLex
+	{
+		margin-left: unset;
+		flex-wrap: wrap;
+		padding:3rem;
+	}
+
+	.FooterFlex1:first-child
+	{
+		padding-bottom:10px;
+	}
+
+	.FooterOptions:nth-child(1),
+	.FooterOptions:nth-child(2)
+	{
+		margin-bottom: 50px;
+	}
+
 
 }
 
@@ -935,14 +980,12 @@ figure
 	#HostMarseille
 	{
 		width:100%;
-		margin-left:-10px;
 	}
 
 	#HostPop
 	{
 		width:100%;
 		border-radius: unset;
-		padding:1rem;
 		transition:0.3s;
 	}
 
@@ -964,6 +1007,5 @@ figure
 	.TitleofSection
 	{
 		margin-top:20px;
-		margin-left:5px;
 	}
 }
