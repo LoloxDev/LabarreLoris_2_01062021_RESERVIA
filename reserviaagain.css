@@ -40,7 +40,7 @@ nav ul
 
 .nav-login, .nav-login:visited
 {
-	padding:6rem 3rem 0 3rem;
+	padding:6rem 1.5rem 0 3rem;
 	color:#0065FC;
 
 }
@@ -655,11 +655,10 @@ footer a
 	height:100%;
 }
 
-.FooterFlex:first-child
+.FooterOptions ul li
 {
-	
+	padding: 0.3rem 0 0.3rem 0;
 }
-
 
 /* figures */
 
@@ -772,6 +771,18 @@ figure
 	{
 		flex-wrap: wrap;
 	}
+
+	#footer
+	{
+		margin-top: unset;
+	}
+
+	.FooterFLex
+	{
+		justify-content: space-around;
+		width:100%;
+		margin-left: unset;
+	}
 }
 
 @media screen and (max-width: 767px)
@@ -787,11 +798,6 @@ figure
 	{
 		position:relative;
 		display:block;
-	}
-
-	#logo
-	{
-		padding-left: 1.5rem;
 	}
 
 	nav ul
@@ -951,20 +957,17 @@ figure
 	{
 		margin-left: unset;
 		flex-wrap: wrap;
-		padding:3rem;
+	}
+
+	.FooterOptions
+	{
+		margin: 1.5rem;
 	}
 
 	.FooterFlex1:first-child
 	{
 		padding-bottom:10px;
 	}
-
-	.FooterOptions:nth-child(1),
-	.FooterOptions:nth-child(2)
-	{
-		margin-bottom: 50px;
-	}
-
 
 }
 
@@ -1007,5 +1010,17 @@ figure
 	.TitleofSection
 	{
 		margin-top:20px;
+	}
+
+	.FooterFLex
+	{
+		flex-direction: column;
+		align-content: center;
+		width:75%;
+	}
+
+	.FooterOptions
+	{
+		margin: 1.5rem 0 1.5rem 0;
 	}
 }
