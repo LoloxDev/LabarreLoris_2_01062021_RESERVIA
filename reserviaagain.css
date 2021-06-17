@@ -1,77 +1,65 @@
-@font-face                /* POLICE */
-{
-    font-family: 'Raleway';
+@font-face /* POLICE */ {
+    font-family: "Raleway";
     font-style: normal;
     font-weight: normal;
-    src: local('Raleway'), url('police/Raleway/static/Raleway-Medium.ttf') format('woff');
+    src: local("Raleway"),
+        url("police/Raleway/static/Raleway-Medium.ttf") format("woff");
 }
 
 /* Global */
 
-*
-{
-	margin:0;
-	padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 /* Nav */
 
-nav
-{
-	display:flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	padding:2.2rem 0;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2.2rem 0;
 }
 
-nav ul
-{
-	display:flex;
-	list-style: none;
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-.nav-link
-{
-	padding:3rem 3rem 0 3rem;
+.nav-link {
+    padding: 3rem 3rem 0 3rem;
 }
 
-
-
-.nav-login, .nav-login:visited
-{
-	padding:6rem 1.5rem 0 3rem;
-	color:#0065FC;
-
+.nav-login,
+.nav-login:visited {
+    padding: 6rem 1.5rem 0 3rem;
+    color: #0065fc;
 }
 
-.nav-link:hover
-{
-	color:#0065FC;
-	border-top:3px solid #0065FC;
-	transition:0.1s;
+.nav-link:hover {
+    color: #0065fc;
+    border-top: 3px solid #0065fc;
+    transition: 0.1s;
 }
-
 
 /* TEXTE GRAS */
 
-strong                            
-{
-	font-size: 1.1em;
+strong {
+    font-size: 1.1em;
 }
 
 /* CORPS */
 
-body                      
-{
-	font-family: 'Raleway';
-	margin:0;
+body {
+    font-family: "Raleway";
+    margin: 0;
 }
 
 /* CORPS CONTENEUR*/
 
-.containeur
-{
+.containeur {
     max-width: 95%;
     margin: auto;
     padding: 0 2rem;
@@ -80,99 +68,88 @@ body
 
 /* SECTIONS */
 
-section                   
-{
-clear: both;
-font-size: 0.95em;
+section {
+    clear: both;
+    font-size: 0.95em;
 }
 
 /* ICONES */
 
-i                         
-{
-	margin-right: 1em;
+i {
+    margin-right: 1em;
 }
 
 /* TITRES H1*/
 
-h1                        
-{
-	font-size: 1.6em;
-	margin-bottom:8px;
-	margin-top:20px;
+h1 {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    margin-top: 20px;
 }
 
-h2
-{
-	font-size: 1.3em;
+h2 {
+    font-size: 1.3em;
 }
 
 /* EFFETS DES CARTES AU SURVOL */
 
-article:hover, .activity a:hover
-{
-	transition:0.1s;
-	transform: scale(1.015);
+article:hover,
+.activity a:hover {
+    transition: 0.1s;
+    transform: scale(1.015);
 }
 
 /* LIENS DEJA VU */
 
-a:visited
-{
-	color:black;
+a:visited {
+    color: black;
 }
 
 /* LIENS APRES CLIQUE */
 
-a:link                         
-{
-	text-decoration: none;
+a:link {
+    text-decoration: none;
 }
 
 /* ICONES */
 
-#logoinfo
-{
-	color:#0065FC;                                                  
-	border:1px solid silver;
-	float:left;
-	width:20px;
-	height:26px;
-	padding-top:8px;
-	padding-left:14px;
-	border-radius:150px 150px 150px 150px;
-	position:relative;
-	bottom:8px;
-	margin-right: 20px;
-	margin-top:3px;
+#logoinfo {
+    color: #0065fc;
+    border: 1px solid silver;
+    float: left;
+    width: 20px;
+    height: 26px;
+    padding-top: 8px;
+    padding-left: 14px;
+    border-radius: 150px 150px 150px 150px;
+    position: relative;
+    bottom: 8px;
+    margin-right: 20px;
+    margin-top: 3px;
 }
 
-.etoilebleu
-{
-	float:left;
-	color: #0065FC;
-	letter-spacing: -10px;
-	padding-top: 3px;
-	margin-left: 10px;
-
+.etoilebleu {
+    float: left;
+    color: #0065fc;
+    letter-spacing: -10px;
+    padding-top: 3px;
+    margin-left: 10px;
 }
-.etoilegrise
-{
-	color: silver;
-	padding-top: 3px;
-	letter-spacing: -10px;
+.etoilegrise {
+    color: silver;
+    padding-top: 3px;
+    letter-spacing: -10px;
 }
 
-#GPS
-{
-	float:left;
-	height:33px;
-	width:15px;
-	padding-top:12px;
-	padding-left:20px;
-	padding-right:13px;
-	padding-bottom:0;
-	background-color: #F2F2F2;
+#GPS {
+    float: left;
+    height: 33px;
+    width: 15px;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 13px;
+    padding-bottom: 0;
+    background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -180,214 +157,190 @@ a:link
 
 /* BARRE DE RECHERCHE */
 
-#Marseille                                        
-{
-	float:left;
-	height:43px;
-	padding-left:30px;
-	font-family: 'Raleway';
-	font-size: 1.1em;
-	border-radius: 3px 3px 3px 3px;
-	width:200px;
-	border-left:0;
-	border-right:0;
-	border-top: 1px solid #F2F2F2;
-	border-bottom: 1px solid #F2F2F2;
-
-
+#Marseille {
+    float: left;
+    height: 43px;
+    padding-left: 30px;
+    font-family: "Raleway";
+    font-size: 1.1em;
+    border-radius: 3px 3px 3px 3px;
+    width: 200px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
 }
 
-::placeholder
-{
-	color:black;
-	opacity: 1;
-	font-weight: bold;
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: bold;
 }
 
 /* BOUTON RECHERCHER */
 
-.Rechercher                                     
-{
-	float:left;
-	height:45px;
-	background-color:#0065FC;
-	color:white;
-	font-size: 1.1em;
-	border:none;
-	width:150px;
-	border-radius: 0px 15px 15px 0px;
-	cursor:pointer;
-	font-weight: bold;
-	font-family: 'Raleway';
+.Rechercher {
+    float: left;
+    height: 45px;
+    background-color: #0065fc;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    width: 150px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Raleway";
 }
 
 /* BOUTON RECHERCHER ( LOUPE ) */
 
-button
-{
-	display:none;
+button {
+    display: none;
 }
 
 /* --------------------------------------------FILTRES------------------------------------------------- */
 
 /* FILTRES ICONES */
 
-.filterIcons                                               
-{
-	text-align: center;
-	width:38px;
-	height: 36px;
-	border-radius: 60px 60px 60px 60px;
-	padding-top:18px;
-	padding-left:14px;
-	position:relative;
-	bottom:17px;
-	right:10px;
-	background-color:#DEEBFF;
-	color:#0065FC;
-	float:left;
+.filterIcons {
+    text-align: center;
+    width: 38px;
+    height: 36px;
+    border-radius: 60px 60px 60px 60px;
+    padding-top: 18px;
+    padding-left: 14px;
+    position: relative;
+    bottom: 17px;
+    right: 10px;
+    background-color: #deebff;
+    color: #0065fc;
+    float: left;
 }
 
 /* FILTRES CONTENEUR */
 
-.filterBox                                              
-{
-	height: 35px;
-	border:2px solid silver;
-	border-radius: 100px 100px 100px 100px;
-	padding-top:15px;
-	font-weight: bold;
-	margin-left:2em;
-	cursor:pointer;
-	margin-bottom: 6px;
+.filterBox {
+    height: 35px;
+    border: 2px solid silver;
+    border-radius: 100px 100px 100px 100px;
+    padding-top: 15px;
+    font-weight: bold;
+    margin-left: 2em;
+    cursor: pointer;
+    margin-bottom: 6px;
 }
 
 /* EFFETS FILTRES LARGEUR + AU SURVOL */
 
-.filterBox:nth-child(3)                                              
-{
-	width:120px;
+.filterBox:nth-child(3) {
+    width: 120px;
 }
 
-.filterBox:nth-child(3):hover
-{
-	background-color:#F2F7FF;
-	width:125px;
-	transition: 0.3s;
+.filterBox:nth-child(3):hover {
+    background-color: #f2f7ff;
+    width: 125px;
+    transition: 0.3s;
 }
 
-.filterBox:nth-child(2)
-{
-	width:160px;
+.filterBox:nth-child(2) {
+    width: 160px;
 }
 
-
-.filterBox:nth-child(2):hover
-{
-	background-color:#F2F7FF;
-	width:165px;
-	transition: 0.3s;
+.filterBox:nth-child(2):hover {
+    background-color: #f2f7ff;
+    width: 165px;
+    transition: 0.3s;
 }
 
-.filterBox:nth-child(4)
-{
-	width:160px;
+.filterBox:nth-child(4) {
+    width: 160px;
 }
 
-.filterBox:nth-child(4):hover
-{
-	background-color:#F2F7FF;
-	width:165px;
-	transition: 0.3s;
+.filterBox:nth-child(4):hover {
+    background-color: #f2f7ff;
+    width: 165px;
+    transition: 0.3s;
 }
 
-.filterBox:nth-child(5)
-{
-	width:200px;
+.filterBox:nth-child(5) {
+    width: 200px;
 }
 
-.filterBox:nth-child(5):hover
-{
-	background-color:#F2F7FF;
-	width:205px;
-	transition: 0.3s;
+.filterBox:nth-child(5):hover {
+    background-color: #f2f7ff;
+    width: 205px;
+    transition: 0.3s;
 }
 
 /* FILTRES FLEXBOX */
 
-#flexfilterbox                                                
-{
-	display:flex;
-	width:1100px;
-	padding-top:10px;
-	flex-wrap: wrap;
-	max-width: 99%;
+#flexfilterbox {
+    display: flex;
+    width: 1100px;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    max-width: 99%;
 }
-
 
 /* ------------------------------------------- SECTION HEBERGEMENT A MARSEILLE ------------------------------------------------ */
 
 /* FLEX DES DEUX SECTIONS */
 
-#HostSection
-{
-	display:flex;
-	align-items: flex-end;
+#HostSection {
+    display: flex;
+    align-items: flex-end;
 }
 
 /* 2 SECTIONS */
 
-#HostMarseille, #HostPop
-{
-	background-color: #F2F2F2;
+#HostMarseille,
+#HostPop {
+    background-color: #f2f2f2;
     border-radius: 1.5rem;
     padding: 2rem;
 }
 
 /* CONTENEUR SECTION HEB MARSEILLE */
 
-#HostMarseille
-{
-	display:flex;
-	flex-wrap: wrap;
-	justify-content:center;
-	width:69%;
-	margin-right: 30px;
+#HostMarseille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 69%;
+    margin-right: 30px;
 }
 
 /* TITRE DE SECTION */
 
-.TitleofSection
-{
-	width:100%;
-	height:1.5%;
-	margin-bottom:30px;
-	margin-top:0px;
+.TitleofSection {
+    width: 100%;
+    height: 1.5%;
+    margin-bottom: 30px;
+    margin-top: 0px;
 }
 
 /* CARTES DE HEB MARSEILLE */
 
-.HostCartesMarseille
-{
-	background-color: white;
+.HostCartesMarseille {
+    background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
-    width:30%;
-    padding:0.4em;
-    height:185px;
+    width: 30%;
+    padding: 0.4em;
+    height: 185px;
     min-width: 230px;
-	max-width:500px;
+    max-width: 500px;
     margin-bottom: 30px;
-	margin-right: 15px;
+    margin-right: 15px;
 }
 
 /* IMG DANS CARTES HEB MARSEILLE */
 
-.hostingCardFigureImgMarseille
-{
-	height: 7rem;
+.hostingCardFigureImgMarseille {
+    height: 7rem;
     object-fit: cover;
     max-width: 100%;
     width: 100%;
@@ -397,102 +350,90 @@ button
 
 /* CONTENEUR FIGCAPTION CARTES HEB MARSEILLE */
 
-.hostingCardFigcaptionMarseille
-{
-	margin-left: 10px;
+.hostingCardFigcaptionMarseille {
+    margin-left: 10px;
 }
 
 /* TITRE DANS FIGCAPTION CARTES HEB MARSEILLE */
 
-.hostingCardFigcaptionTitleMarseille
-{
-	margin-top: 0.2em;
-	margin-bottom: 0;
+.hostingCardFigcaptionTitleMarseille {
+    margin-top: 0.2em;
+    margin-bottom: 0;
 }
 
 /* DESCRIPTION DANS FIGCAPTION CARTES HEB MARSEILLE */
 
-.HostCartesDescMarseille
-{
-	margin-top: 0.1em;
-	margin-left: 10px;
-	margin-bottom:0;
+.HostCartesDescMarseille {
+    margin-top: 0.1em;
+    margin-left: 10px;
+    margin-bottom: 0;
 }
 
 /* DIV POUR "AFFICHER PLUS" */
 
-.clear
-{
-	display:block;
-	width:100%;
-	margin:8px;
+.clear {
+    display: block;
+    width: 100%;
+    margin: 8px;
 }
 /*---------------------------------------------------SECTION LES PLUS POPULAIRES-------------------------------------------------------------------------*/
 
 /* CONTENEUR SECTION LES PLUS POP */
 
-#HostPop
-{
-	display:flex;
-	flex-wrap:wrap;
-	justify-content:space-around;
-	width:29%;
+#HostPop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 29%;
 }
 
-.TitleGraph
-{
-	display:flex;
-	flex-direction: row;
-	align-content: space-between;
-	width:100%;
-	font-size: 1.1em;
+.TitleGraph {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    width: 100%;
+    font-size: 1.1em;
 }
 
-.TitleGraph i
-{
-	margin-top: 7px;
+.TitleGraph i {
+    margin-top: 7px;
 }
 /* CONTENEUR CARTES LES PLUS POP */
 
-.HostCartesPop
-{
-	background-color: white;
-	border-radius: 1.25rem;
-	box-shadow: 0 0 16px #0000002e;
-	transition-duration: 0.1s;
-	cursor: pointer;
-	width:98%;
-	padding:0.4em;
-	height:130px;
-	min-width: 230px;
-	margin-bottom: 30px;
+.HostCartesPop {
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    width: 98%;
+    padding: 0.4em;
+    height: 130px;
+    min-width: 230px;
+    margin-bottom: 30px;
 }
 
-.HostCartesPop:last-child
-{
-	margin-bottom: 0;
+.HostCartesPop:last-child {
+    margin-bottom: 0;
 }
 
 /* CONTENEUR CARTES POP */
 
-.HostFigCartesPop
-{
-	display:flex;
+.HostFigCartesPop {
+    display: flex;
 }
 
 /* CONTENEUR FLEX DES FIGCAPTION */
 
-.figcaptionflex
-{
-	display:flex;
-	flex-direction: column;
+.figcaptionflex {
+    display: flex;
+    flex-direction: column;
 }
 
 /* CONTENEUR IMAGE CARTES POP */
 
-.hostingCardFigureImgPop
-{
-	height: 8.1rem;
+.hostingCardFigureImgPop {
+    height: 8.1rem;
     object-fit: cover;
     max-width: 100%;
     width: 40%;
@@ -501,526 +442,425 @@ button
 
 /* CONTENEUR FIGCAPTION CARTES POP */
 
-.hostingCardFigcaptionPop
-{
-	margin-left: 10px;
+.hostingCardFigcaptionPop {
+    margin-left: 10px;
 }
 
 /* TITRES FIGCAPTION CARTES POP */
 
-.hostingCardFigcaptionTitlePop
-{
-	margin-top: 0.2em;
-	margin-bottom: 0;
+.hostingCardFigcaptionTitlePop {
+    margin-top: 0.2em;
+    margin-bottom: 0;
 }
 
 /* DESCRIPTION FIGCAPTION CARTES POP */
 
-.HostCartesDescPop
-{
-	margin-top: 0.1em;
-	margin-left: 10px;
-	margin-bottom:0;
+.HostCartesDescPop {
+    margin-top: 0.1em;
+    margin-left: 10px;
+    margin-bottom: 0;
 }
 
 /* ETOILES DE FICAPTION CARTES POP */
 
-.etoiles
-{
-	margin-top:35px;
+.etoiles {
+    margin-top: 35px;
 }
 
 /* ---------------------------------------------------------------- SECTION ACTIVITES ---------------------------------------------------------------------------- */
 
-.activity
-{
-	margin-top: 4rem;
-	margin-bottom: 4rem;
+.activity {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
-.testflex
-{
-	box-shadow: 0 0 16px #0000002e;
-	width:50%;
-	height:550px;
-	display:flex;
-	flex-direction:column;
-	border-radius: 1rem;
-	margin-right: 2.2rem;
+.testflex {
+    box-shadow: 0 0 16px #0000002e;
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-right: 2.2rem;
 }
 
-.testflex2
-{
-	box-shadow: 0 0 16px #0000002e;
-	height:300px;
-	display:flex;
-	flex-direction:column;
-	border-radius: 1rem;
+.testflex2 {
+    box-shadow: 0 0 16px #0000002e;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
 }
 
-.testflex3
-{
-	box-shadow: 0 0 16px #0000002e;
-	height:220px;
-	display:flex;
-	flex-direction:column;
-	border-radius: 1rem;
+.testflex3 {
+    box-shadow: 0 0 16px #0000002e;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
 }
 
-.containeurPicAct
-{
-	position:relative;
-	width:100%;
-	height:100%;
+.containeurPicAct {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-.activityPict
-{
-	position:absolute;
-	width:100%;
-	height:100%;
-	border-radius: 1rem 1rem 0 0;
-	object-fit: cover;
+.activityPict {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
 }
 
-.DescCardAct
-{
-	font-size: 1em;
-	padding:1rem;
+.DescCardAct {
+    font-size: 1em;
+    padding: 1rem;
 }
 
-.FlexDouble
-{
-	display:flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width:45%;
-	margin-right: 2.2rem;
+.FlexDouble {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    margin-right: 2.2rem;
 }
 
-.ContaineurAllAct
-{
-	display:flex;
+.ContaineurAllAct {
+    display: flex;
 }
 
-.FlexDouble:last-child
-{
-	margin-right: 0;
+.FlexDouble:last-child {
+    margin-right: 0;
 }
-
-
 
 /* ---------------------------------------------FOOTER--------------------------------------------------- */
 
 /* CONTENEUR FOOTER */
 
-#footer     
-{
-	width:100%;
-	background-color:#F2F2F2;
-	margin-top: 6rem;
-	height:10rem;
+#footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 6rem;
+    height: 10rem;
 }
 
-.FooterFLex
-{
-	display:flex;
-	align-items: flex-start;
-	justify-content: space-between;
-	width:70%;
-	margin-left: 70px;
-	height:100%;
+.FooterFLex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 70px;
+    height: 100%;
 }
 
-#footer li
-{
-	list-style: none;
+#footer li {
+    list-style: none;
 }
 
 /* FOOTER LIENS */
 
-footer a                             
-{
-	color:black;
-	font-size:0.9em;
+footer a {
+    color: black;
+    font-size: 0.9em;
 }
 
 /* FOOTER FLEX */
 
-.FooterOptions                                                
-{
-	display:flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	height:100%;
+.FooterOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
-.FooterOptions ul li
-{
-	padding: 0.3rem 0 0.3rem 0;
+.FooterOptions ul li {
+    padding: 0.3rem 0 0.3rem 0;
 }
 
 /* figures */
 
-figure
-{
-	margin:0;
+figure {
+    margin: 0;
 }
-
-
-
-
-
 
 /* ----------------------------------------------------------------RESPONSIVE----------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 1500px)
-
-{        
-	.containeur
-	{
-		max-width:100%;
-	}
-
+@media screen and (max-width: 1500px) {
+    .containeur {
+        max-width: 100%;
+    }
 }
-@media screen and (max-width: 1400px)
-
-{        
-	#HostSection
-	{
-		display:flex;
-		align-items: center;
-		flex-direction: column-reverse;
-		width:100%;
-	}
-
-	#HostPop
-	{
-		width:unset;
-		margin-bottom: 20px;
-		flex-direction: row;
-	}
-
-	#HostMarseille
-	{
-		width:unset;
-		margin-right: unset;
-	}
-
-	.HostCartesPop
-	{
-		width:95%;
-	}
-
-	@media screen and (min-width: 1013px)
-	{
-		.HostCartesPop
-		{
-			width:30%;
-			margin-bottom: unset;
-		}
-	}
-
-}
-
-
-@media screen and (max-width: 300px)
-
-{
-	.HostCartesDescPop
-	{
-		margin-bottom: -15px;
-	}
-}
-
-@media screen and (max-width: 1000px)
-
-{
-	.HostCartesMarseille
-	{
-		min-width: 230px;
-		width:45%;
-		transition:0.8s;
-		margin-bottom:25px;
-	}
-
-	.testflex
-	{
-		width:31.5%;
-		height:12rem;
-		margin-right: 2%;
-		margin-bottom: 20px;
-	}
-
-	.FlexDouble
-	{
-		width:66.5%;
-		height:5rem;
-		flex-direction: row;
-		margin-right: 0;
-	}
-
-	.testflex2, .testflex3
-	{
-		height:12rem;
-		width:50%;
-		margin-right: 3%;
-	}
-
-	.ContaineurAllAct
-	{
-		flex-wrap: wrap;
-	}
-
-	#footer
-	{
-		margin-top: unset;
-	}
-
-	.FooterFLex
-	{
-		justify-content: space-around;
-		width:100%;
-		margin-left: unset;
-	}
-}
-
-@media screen and (max-width: 767px)
-
-{
-
-	.containeur
-	{
-		margin:0;
-	}
-
-	nav
-	{
-		position:relative;
-		display:block;
-	}
-
-	nav ul
-	{
-		margin-top: 3rem;
-		justify-content: center;
-	}
-
-	.nav-link
-	{
-		padding:1rem 3rem;
-        width:1rem;
-		margin: unset;
-
-	}
-
-	.login-link
-	{
-		margin: unset;
-	}
-
-	nav li:last-child
-	{
-		position:absolute;
-		top:11rem;
-		right:0;
-	}
-
-	.nav-link:nth-child(1),
-	.nav-link:nth-child(2)
-	{
-		border-top:none;
-		border-bottom:2px solid #F2F2F2;
-
-	}
-
-	.nav-link:hover
-	{
-		border-top:none;
-		border-bottom:2px solid #0065FC;
-	}
-
-    nav ul li
-    {
-        text-align:center;
+@media screen and (max-width: 1400px) {
+    #HostSection {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
     }
 
-	.nav-login
-	{
-		position:absolute;
-		bottom:6.3rem;
-		right:-2rem;
-	}
+    #HostPop {
+        width: unset;
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
 
-	input:nth-child(3)
-	{
-		display:none;
-	}
+    #HostMarseille {
+        width: unset;
+        margin-right: unset;
+    }
 
-	button
-	{
-	display:block;
-	}
+    .HostCartesPop {
+        width: 95%;
+    }
 
-	.Rechercher
-	{
-		width:50px;
-		padding-left: 15px;
-	}
-
-	#Marseille
-	{
-		width:50%;
-		padding-left: 20px;
-	}
-
-	#flexfilterbox h2
-	{
-		width:100%;
-		margin-bottom: 20px;
-	}
-
-
-	h1
-	{
-		margin-top: 20px;
-	}
-
-	.TitleofSection
-	{
-		font-size:1.4em;
-	}
-
-	#HostMarseille
-	{
-		background-color: white;
-	}
-
-	.HostCartesMarseille
-	{
-		min-width: 230px;
-		width:100%;
-		transition:0.6s;
-		margin-bottom:25px;
-		margin-right: 0;
-	
-	}
-
-	#HostMarseille
-	{
-		width:100%;
-		padding:0;
-		margin:0;
-	}
-
-	#HostSection
-	{
-		width:100%;
-		margin:0;
-
-	}
-
-	.testflex
-	{
-		width:100%;
-		margin-right: unset;
-		transition: 0.6s;
-	}
-
-	.FlexDouble
-	{
-		width:100%;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-bottom: 21rem;
-	}
-
-	.testflex2, .testflex3
-	{
-		width:100%;
-		margin-right: unset;
-		margin-bottom: 1rem;
-		transition: 0.6s;
-	}
-
-	.ContaineurAllAct
-	{
-		justify-content: center;
-	}
-
-	#footer
-	{
-		height:unset;
-	}
-
-	.FooterFLex
-	{
-		margin-left: unset;
-		flex-wrap: wrap;
-	}
-
-	.FooterOptions
-	{
-		margin: 1.5rem;
-	}
-
-	.FooterFlex1:first-child
-	{
-		padding-bottom:10px;
-	}
-
+    @media screen and (min-width: 1013px) {
+        .HostCartesPop {
+            width: 30%;
+            margin-bottom: unset;
+        }
+    }
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 300px) {
+    .HostCartesDescPop {
+        margin-bottom: -15px;
+    }
+}
 
-{
-	#Marseille
-	{
-		width:55%;
-		padding-left: 20px;
-	}
+@media screen and (max-width: 1000px) {
+    .HostCartesMarseille {
+        min-width: 230px;
+        width: 45%;
+        transition: 0.8s;
+        margin-bottom: 25px;
+    }
 
-	#HostMarseille
-	{
-		width:100%;
-	}
+    .testflex {
+        width: 31.5%;
+        height: 12rem;
+        margin-right: 2%;
+        margin-bottom: 20px;
+    }
 
-	#HostPop
-	{
-		width:100%;
-		border-radius: unset;
-		transition:0.3s;
-	}
+    .FlexDouble {
+        width: 66.5%;
+        height: 5rem;
+        flex-direction: row;
+        margin-right: 0;
+    }
 
-	.filterBox
-	{
-		margin-left: 0;
-	}
+    .testflex2,
+    .testflex3 {
+        height: 12rem;
+        width: 50%;
+        margin-right: 3%;
+    }
 
-	.filterBox:nth-child(3) 
-	{
-		margin-left: 10px;
-	}
+    .ContaineurAllAct {
+        flex-wrap: wrap;
+    }
 
-	h1
-	{
-		font-size: 1.4em;
-	}
+    #footer {
+        margin-top: unset;
+    }
 
-	.TitleofSection
-	{
-		margin-top:20px;
-	}
+    .FooterFLex {
+        justify-content: space-around;
+        width: 100%;
+        margin-left: unset;
+    }
+}
 
-	.FooterFLex
-	{
-		flex-direction: column;
-		align-content: center;
-		width:75%;
-	}
+@media screen and (max-width: 767px) {
+    .containeur {
+        margin: 0;
+    }
 
-	.FooterOptions
-	{
-		margin: 1.5rem 0 1.5rem 0;
-	}
+    nav {
+        position: relative;
+        display: block;
+    }
+
+    nav ul {
+        margin-top: 3rem;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 1rem 3rem;
+        width: 1rem;
+        margin: unset;
+    }
+
+    .login-link {
+        margin: unset;
+    }
+
+    nav li:last-child {
+        position: absolute;
+        top: 11rem;
+        right: 0;
+    }
+
+    .nav-link:nth-child(1),
+    .nav-link:nth-child(2) {
+        border-top: none;
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    .nav-link:hover {
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .nav-login {
+        position: absolute;
+        bottom: 6.3rem;
+        right: -2rem;
+    }
+
+    input:nth-child(3) {
+        display: none;
+    }
+
+    button {
+        display: block;
+    }
+
+    .Rechercher {
+        width: 50px;
+        padding-left: 15px;
+    }
+
+    #Marseille {
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    #flexfilterbox h2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    .TitleofSection {
+        font-size: 1.4em;
+    }
+
+    #HostMarseille {
+        background-color: white;
+    }
+
+    .HostCartesMarseille {
+        min-width: 230px;
+        width: 100%;
+        transition: 0.6s;
+        margin-bottom: 25px;
+        margin-right: 0;
+    }
+
+    #HostMarseille {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #HostSection {
+        width: 100%;
+        margin: 0;
+    }
+
+    .testflex {
+        width: 100%;
+        margin-right: unset;
+        transition: 0.6s;
+    }
+
+    .FlexDouble {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 21rem;
+    }
+
+    .testflex2,
+    .testflex3 {
+        width: 100%;
+        margin-right: unset;
+        margin-bottom: 1rem;
+        transition: 0.6s;
+    }
+
+    .ContaineurAllAct {
+        justify-content: center;
+    }
+
+    #footer {
+        height: unset;
+    }
+
+    .FooterFLex {
+        margin-left: unset;
+        flex-wrap: wrap;
+    }
+
+    .FooterOptions {
+        margin: 1.5rem;
+    }
+
+    .FooterFlex1:first-child {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #Marseille {
+        width: 55%;
+        padding-left: 20px;
+    }
+
+    #HostMarseille {
+        width: 100%;
+    }
+
+    #HostPop {
+        width: 100%;
+        border-radius: unset;
+        transition: 0.3s;
+    }
+
+    .filterBox {
+        margin-left: 0;
+    }
+
+    .filterBox:nth-child(3) {
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .TitleofSection {
+        margin-top: 20px;
+    }
+
+    .FooterFLex {
+        flex-direction: column;
+        align-content: center;
+        width: 75%;
+    }
+
+    .FooterOptions {
+        margin: 1.5rem 0 1.5rem 0;
+    }
 }
