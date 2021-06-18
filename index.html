@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservia - OpenClassrooms</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- NE PAS TOUCHER -->
+        <script
+            src="https://kit.fontawesome.com/280516d329.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <!-- ENTETE -->
+
+        <header>
+            <nav>
+                <a href="#" class="logo">
+                    <img
+                        id="logo"
+                        src="images/reservia_logo.svg"
+                        alt="Logo reservia"
+                    />
+                </a>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#HostMarseille"
+                            >Hébergements</a
+                        >
+                    </li>
+                    <li><a class="nav-link" href="#act">Activités</a></li>
+                    <li><a class="nav-login" href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SECTION TITRE, RECHERCHES, FILTRES -->
+
+        <section>
+            <!-- TITRE PRINCIPAL -->
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+
+            <p>En plein centre de ville ou en pleine nature</p>
+
+            <!-- BARRE DE RECHERCHE -->
+
+            <form method="post" action="traitement.php">
+                <div id="search">
+                    <label for="Marseille" id="GPS"
+                        ><i class="fas fa-map-marker-alt"></i
+                    ></label>
+                    <input
+                        id="Marseille"
+                        type="text"
+                        name="lieu"
+                        size="28"
+                        placeholder="Marseille, France"
+                    />
+                    <button class="search-btn">
+                        <i class="fa fa-search search-btn-i"></i
+                        ><span>Rechercher</span>
+                    </button>
+                </div>
+            </form>
+
+            <!-- FILTRES -->
+
+            <section id="flexfilterbox">
+                <h2>Filtres</h2>
+
+                <button class="filterBox">
+                    <i class="filterIcons">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </i>
+                    <span>Economique</span>
+                </button>
+
+                <button class="filterBox">
+                    <i class="filterIcons">
+                        <i class="fas fa-child"></i>
+                    </i>
+                    <span>Familial</span>
+                </button>
+
+                <button class="filterBox">
+                    <i class="filterIcons">
+                        <i class="fas fa-heart"></i>
+                    </i>
+                    <span>Romantique</span>
+                </button>
+
+                <button class="filterBox">
+                    <i class="filterIcons">
+                        <i class="fas fa-dog"></i>
+                    </i>
+                    <span>Animaux autorisés</span>
+                </button>
+
+                <!-- INFO -->
+
+                <p>
+                    <i class="fas fa-info"></i> Plus de 500 logements sont
+                    disponibles dans cette ville
+                </p>
+            </section>
+        </section>
+
+        <!-- SECTION DES DEUX BLOCS MARSEILLE + LES PLUS POP -->
+
+        <div id="HostSection">
+            <!-- PREMIER BLOC HEBERGEMENTS A MARSEILLE -->
+
+            <section id="HostMarseille">
+                <!-- TITRE  -->
+                <header>
+                    <h2 class="TitleofSection">Hébergement à Marseille</h2>
+                </header>
+
+                <!-- ARTICLES (CARTES) -->
+
+                <article class="HostCartesMarseille">
+                    <a href="#">
+                        <figure class="HostFigCartesMarseille">
+                            <img
+                                class="hostingCardFigureImgMarseille"
+                                src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <figcaption class="hostingCardFigcaptionMarseille">
+                                <h3 class="hostingCardFigcaptionTitleMarseille">
+                                    Auberge de la Cannebière
+                                </h3>
+                                <p class="HostCartesDescMarseille">
+                                    Nuit à partir de <strong> 25€ </strong>
+                                </p>
+
+                                <div class="etoilebleu">
+                                    <i class="fas fa-star"></i
+                                    ><i class="fas fa-star"></i
+                                    ><i class="fas fa-star"></i
+                                    ><i class="fas fa-star"></i>
+
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="HostCartesMarseille">
+                    <a href="#">
+                        <figure class="HostFigCartesMarseille">
+                            <img
+                                class="hostingCardFigureImgMarseille"
+                                src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <figcaption class="hostingCardFigcaptionMarseille">
+                                <h3 class="hostingCardFigcaptionTitleMarseille">
+                                    Hôtel du port
+                                </h3>
+                            </figcaption>
+                        </figure>
+
+                        <p class="HostCartesDescMarseille">
+                            Nuit à partir de <strong> 25€ </strong>
+                        </p>
+
+                        <div class="etoilebleu">
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="HostCartesMarseille">
+                    <a href="#">
+                        <figure class="HostFigCartesMarseille">
+                            <img
+                                class="hostingCardFigureImgMarseille"
+                                src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <figcaption class="hostingCardFigcaptionMarseille">
+                                <h3 class="hostingCardFigcaptionTitleMarseille">
+                                    Hôtel les mouettes
+                                </h3>
+                            </figcaption>
+                        </figure>
+
+                        <p class="HostCartesDescMarseille">
+                            Nuit à partir de <strong> 25€ </strong>
+                        </p>
+
+                        <div class="etoilebleu">
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i>
+                        </div>
+                        <div class="etoilegrise">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="HostCartesMarseille">
+                    <a href="#">
+                        <figure class="HostFigCartesMarseille">
+                            <img
+                                class="hostingCardFigureImgMarseille"
+                                src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <figcaption class="hostingCardFigcaptionMarseille">
+                                <h3 class="hostingCardFigcaptionTitleMarseille">
+                                    Auberge de la mer
+                                </h3>
+                            </figcaption>
+                        </figure>
+
+                        <p class="HostCartesDescMarseille">
+                            Nuit à partir de <strong> 25€ </strong>
+                        </p>
+
+                        <div class="etoilebleu">
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i>
+                        </div>
+                        <div class="etoilegrise">
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="HostCartesMarseille">
+                    <a href="#">
+                        <figure class="HostFigCartesMarseille">
+                            <img
+                                class="hostingCardFigureImgMarseille"
+                                src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <figcaption class="hostingCardFigcaptionMarseille">
+                                <h3 class="hostingCardFigcaptionTitleMarseille">
+                                    Auberge Le Panier
+                                </h3>
+                            </figcaption>
+                        </figure>
+
+                        <p class="HostCartesDescMarseille">
+                            Nuit à partir de <strong> 25€ </strong>
+                        </p>
+
+                        <div class="etoilebleu">
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i>
+                        </div>
+                        <div class="etoilegrise">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="HostCartesMarseille">
+                    <a href="#">
+                        <figure class="HostFigCartesMarseille">
+                            <img
+                                class="hostingCardFigureImgMarseille"
+                                src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <figcaption class="hostingCardFigcaptionMarseille">
+                                <h3 class="hostingCardFigcaptionTitleMarseille">
+                                    Hôtel chez Amina
+                                </h3>
+                            </figcaption>
+                        </figure>
+
+                        <p class="HostCartesDescMarseille">
+                            Nuit à partir de <strong> 25€ </strong>
+                        </p>
+
+                        <div class="etoilebleu">
+                            <i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i
+                            ><i class="fas fa-star"></i>
+                        </div>
+                    </a>
+                </article>
+
+                <a href="#" class="clear"><strong> Afficher plus </strong></a>
+            </section>
+
+            <!-- DEUXIEME BLOC LES PLUS POPULAIRES -->
+
+            <section id="HostPop">
+                <!-- TITRE -->
+
+                <header class="TitleGraph">
+                    <h2 class="TitleofSection">Les plus populaire</h2>
+                    <i class="fas fa-chart-line"></i>
+                </header>
+
+                <!-- ARTICLES (CARTES) -->
+
+                <article class="HostCartesPop">
+                    <a href="#">
+                        <figure class="HostFigCartesPop">
+                            <img
+                                class="hostingCardFigureImgPop"
+                                src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <div class="figcaptionflex">
+                                <div class="hostingCardFigcaptionPop">
+                                    <h3 class="hostingCardFigcaptionTitlePop">
+                                        Hôtel Le soleil du matin
+                                    </h3>
+                                </div>
+
+                                <p class="HostCartesDescPop">
+                                    Nuit à partir de <strong> 25€ </strong>
+                                </p>
+
+                                <div class="etoiles">
+                                    <div class="etoilebleu">
+                                        <i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="HostCartesPop">
+                    <a href="#">
+                        <figure class="HostFigCartesPop">
+                            <img
+                                class="hostingCardFigureImgPop"
+                                src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <div class="figcaptionflex">
+                                <div class="hostingCardFigcaptionPop">
+                                    <h3 class="hostingCardFigcaptionTitlePop">
+                                        Au coeur de l'eau Chambres d'hôtes
+                                    </h3>
+                                </div>
+
+                                <p class="HostCartesDescPop">
+                                    Nuit à partir de <strong> 25€ </strong>
+                                </p>
+
+                                <div class="etoiles">
+                                    <div class="etoilebleu">
+                                        <i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="etoilegrise">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </a>
+                </article>
+
+                <article class="HostCartesPop">
+                    <a href="#">
+                        <figure class="HostFigCartesPop">
+                            <img
+                                class="hostingCardFigureImgPop"
+                                src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                            />
+                            <div class="figcaptionflex">
+                                <div class="hostingCardFigcaptionPop">
+                                    <h3 class="hostingCardFigcaptionTitlePop">
+                                        Hôtel Tout bleu et Blanc
+                                    </h3>
+                                </div>
+
+                                <p class="HostCartesDescPop">
+                                    Nuit à partir de <strong> 25€ </strong>
+                                </p>
+
+                                <div class="etoiles">
+                                    <div class="etoilebleu">
+                                        <i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i
+                                        ><i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="etoilegrise">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    </a>
+                </article>
+            </section>
+        </div>
+
+        <section class="activity">
+            <header>
+                <h2 class="TitleofSection">Activités à Marseille</h2>
+            </header>
+
+            <div class="ContaineurAllAct">
+                <a href="#" class="testflex">
+                    <div class="containeurPicAct">
+                        <img
+                            class="activityPict"
+                            src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                            alt="Un joli port"
+                        />
+                    </div>
+                    <h3 class="DescCardAct">Vieux Port</h3>
+                </a>
+
+                <div class="FlexDouble">
+                    <a href="#" class="testflex2">
+                        <div class="containeurPicAct">
+                            <img
+                                class="activityPict"
+                                src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                alt="Un joli port"
+                            />
+                        </div>
+                        <h3 class="DescCardAct">Fort de Pomègues</h3>
+                    </a>
+
+                    <a href="#" class="testflex3">
+                        <div class="containeurPicAct">
+                            <img
+                                class="activityPict"
+                                src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                alt="Un joli port"
+                            />
+                        </div>
+                        <h3 class="DescCardAct">Île du Frioul</h3>
+                    </a>
+                </div>
+
+                <a href="#" class="testflex">
+                    <div class="containeurPicAct">
+                        <img
+                            class="activityPict"
+                            src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                            alt="Un joli port"
+                        />
+                    </div>
+                    <h3 class="DescCardAct">Parc National des Calanques</h3>
+                </a>
+
+                <div class="FlexDouble">
+                    <a href="#" class="testflex3">
+                        <div class="containeurPicAct">
+                            <img
+                                class="activityPict"
+                                src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                alt="Un joli port"
+                            />
+                        </div>
+                        <h3 class="DescCardAct">Notre-Dame-de-la-Garde</h3>
+                    </a>
+
+                    <a href="#" class="testflex2">
+                        <div class="containeurPicAct">
+                            <img
+                                class="activityPict"
+                                src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                alt="Un joli port"
+                            />
+                        </div>
+                        <h3 class="DescCardAct">Parc Longchamp</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <!-- FOOTER -->
+
+            <div class="FooterFLex">
+                <div class="FooterOptions">
+                    <h2 class="FooterFlex1">A propos</h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="FooterFlex1"
+                                >Fonctionnement du site</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="FooterFlex1"
+                                >Conditions générales de vente</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="FooterFlex1"
+                                >Données et confidentialités</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="FooterOptions">
+                    <h2 class="FooterFlex1">Nos hébergement</h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="FooterFlex1">Charte qualité</a>
+                        </li>
+                        <li>
+                            <a href="#" class="FooterFlex1"
+                                >Soumettre votre hotel</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="FooterOptions">
+                    <h2 class="FooterFlex1">Assistance</h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="FooterFlex1">Centre d'aide</a>
+                        </li>
+                        <li>
+                            <a href="#" class="FooterFlex1">Nous contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

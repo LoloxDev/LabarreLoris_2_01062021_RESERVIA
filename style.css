@@ -20,7 +20,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2.2rem 0;
+    padding: 2.2rem;
 }
 
 nav ul {
@@ -57,20 +57,12 @@ body {
     margin: 0;
 }
 
-/* CORPS CONTENEUR*/
-
-.containeur {
-    max-width: 95%;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
-}
-
 /* SECTIONS */
 
 section {
     clear: both;
     font-size: 0.95em;
+    padding: 2rem;
 }
 
 /* ICONES */
@@ -153,6 +145,10 @@ a:link {
     border-radius: 15px 0px 0px 15px;
 }
 
+.search-btn > i {
+    display: none;
+}
+
 /* -------------------------------------- ZONE DE RECHERCHE ----------------------------------- */
 
 /* BARRE DE RECHERCHE */
@@ -179,7 +175,7 @@ a:link {
 
 /* BOUTON RECHERCHER */
 
-.Rechercher {
+.search-btn {
     float: left;
     height: 45px;
     background-color: #0065fc;
@@ -195,92 +191,43 @@ a:link {
 
 /* BOUTON RECHERCHER ( LOUPE ) */
 
-button {
-    display: none;
-}
-
 /* --------------------------------------------FILTRES------------------------------------------------- */
 
 /* FILTRES ICONES */
 
 .filterIcons {
     text-align: center;
-    width: 38px;
-    height: 36px;
     border-radius: 60px 60px 60px 60px;
-    padding-top: 18px;
-    padding-left: 14px;
-    position: relative;
-    bottom: 17px;
-    right: 10px;
     background-color: #deebff;
     color: #0065fc;
-    float: left;
+    padding: 18px;
+    margin: 0 15px 0 -2px;
+}
+
+.filterIcons i {
+    margin-right: -2px;
 }
 
 /* FILTRES CONTENEUR */
 
 .filterBox {
-    height: 35px;
     border: 2px solid silver;
     border-radius: 100px 100px 100px 100px;
-    padding-top: 15px;
     font-weight: bold;
-    margin-left: 2em;
     cursor: pointer;
     margin-bottom: 6px;
-}
-
-/* EFFETS FILTRES LARGEUR + AU SURVOL */
-
-.filterBox:nth-child(3) {
-    width: 120px;
-}
-
-.filterBox:nth-child(3):hover {
-    background-color: #f2f7ff;
-    width: 125px;
-    transition: 0.3s;
-}
-
-.filterBox:nth-child(2) {
-    width: 160px;
-}
-
-.filterBox:nth-child(2):hover {
-    background-color: #f2f7ff;
-    width: 165px;
-    transition: 0.3s;
-}
-
-.filterBox:nth-child(4) {
-    width: 160px;
-}
-
-.filterBox:nth-child(4):hover {
-    background-color: #f2f7ff;
-    width: 165px;
-    transition: 0.3s;
-}
-
-.filterBox:nth-child(5) {
-    width: 200px;
-}
-
-.filterBox:nth-child(5):hover {
-    background-color: #f2f7ff;
-    width: 205px;
-    transition: 0.3s;
+    padding: 15px 20px 15px 0;
+    background-color: white;
 }
 
 /* FILTRES FLEXBOX */
 
 #flexfilterbox {
     display: flex;
-    width: 1100px;
     padding-top: 10px;
     flex-wrap: wrap;
-    max-width: 99%;
+    max-width: 100%;
+    padding: 0;
 }
 
 /* ------------------------------------------- SECTION HEBERGEMENT A MARSEILLE ------------------------------------------------ */
@@ -299,6 +246,7 @@ button {
     background-color: #f2f2f2;
     border-radius: 1.5rem;
     padding: 2rem;
+    margin: 2rem;
 }
 
 /* CONTENEUR SECTION HEB MARSEILLE */
@@ -313,7 +261,7 @@ button {
 
 /* TITRE DE SECTION */
 
-.TitleofSection {
+header {
     width: 100%;
     height: 1.5%;
     margin-bottom: 30px;
@@ -608,7 +556,6 @@ figure {
 
     #HostMarseille {
         width: unset;
-        margin-right: unset;
     }
 
     .HostCartesPop {
@@ -722,25 +669,24 @@ figure {
     .nav-login {
         position: absolute;
         bottom: 6.3rem;
-        right: -2rem;
+        right: 1rem;
     }
 
     input:nth-child(3) {
         display: none;
     }
 
-    button {
+    .search-btn i {
         display: block;
     }
 
-    .Rechercher {
-        width: 50px;
-        padding-left: 15px;
+    .search-btn span {
+        display: none;
     }
 
-    #Marseille {
-        width: 50%;
-        padding-left: 20px;
+    .search-btn {
+        width: 50px;
+        padding-left: 15px;
     }
 
     #flexfilterbox h2 {
@@ -769,8 +715,8 @@ figure {
     }
 
     #HostMarseille {
-        width: 100%;
-        padding: 0;
+        width: unset;
+        padding: 1rem;
         margin: 0;
     }
 
@@ -828,22 +774,14 @@ figure {
         padding-left: 20px;
     }
 
-    #HostMarseille {
-        width: 100%;
-    }
-
     #HostPop {
-        width: 100%;
         border-radius: unset;
         transition: 0.3s;
+        margin: unset;
     }
 
     .filterBox {
         margin-left: 0;
-    }
-
-    .filterBox:nth-child(3) {
-        margin-left: 10px;
     }
 
     h1 {
