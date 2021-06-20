@@ -265,6 +265,10 @@ section p {
     margin-top: 100px;
 }
 
+.filter-box:hover {
+    background-color: aliceblue;
+}
+
 /* ------------------------------------------- SECTION HEBERGEMENT A MARSEILLE ------------------------------------------------ */
 
 /* FLEX DES DEUX SECTIONS */
