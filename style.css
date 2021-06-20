@@ -120,17 +120,38 @@ a:link {
     margin-top: 3px;
 }
 
-.etoilebleu {
-    float: left;
+.etoiles {
     color: #0065fc;
     letter-spacing: -10px;
     padding-top: 3px;
     margin-left: 10px;
 }
-.etoilegrise {
+
+.HostCartesMarseille:nth-child(2n-8)
+    > a
+    > .HostFigCartesMarseille
+    > .hostingCardFigcaptionMarseille
+    > .etoiles
+    > i:last-child {
     color: silver;
-    padding-top: 3px;
-    letter-spacing: -10px;
+}
+
+.HostCartesMarseille:nth-child(5)
+    > a
+    > .HostFigCartesMarseille
+    > .hostingCardFigcaptionMarseille
+    > .etoiles
+    > i:nth-child(n + 4) {
+    color: silver;
+}
+
+.HostCartesPop:nth-child(n + 3)
+    > a
+    > .HostFigCartesPop
+    > .figcaptionflex
+    > .etoiles
+    > i:last-child {
+    color: silver;
 }
 
 #GPS {
@@ -421,12 +442,6 @@ section header {
     margin-top: 0.1em;
     margin-left: 10px;
     margin-bottom: 0;
-}
-
-/* ETOILES DE FICAPTION CARTES POP */
-
-.etoiles {
-    margin-top: 35px;
 }
 
 /* ---------------------------------------------------------------- SECTION ACTIVITES ---------------------------------------------------------------------------- */
