@@ -105,7 +105,7 @@ a:link {
 
 /* ICONES */
 
-#logoinfo {
+#logo-info {
     color: #0065fc;
     border: 1px solid silver;
     float: left;
@@ -127,7 +127,7 @@ a:link {
     margin-left: 10px;
 }
 
-.HostCartesMarseille:nth-child(2n-8)
+.host-cartes-marseille:nth-child(2n-8)
     > a
     > .HostFigCartesMarseille
     > .hostingCardFigcaptionMarseille
@@ -136,7 +136,7 @@ a:link {
     color: silver;
 }
 
-.HostCartesMarseille:nth-child(5)
+.host-cartes-marseille:nth-child(5)
     > a
     > .HostFigCartesMarseille
     > .hostingCardFigcaptionMarseille
@@ -145,7 +145,7 @@ a:link {
     color: silver;
 }
 
-.HostCartesPop:nth-child(n + 3)
+.host-cartes-pop:nth-child(n + 3)
     > a
     > .HostFigCartesPop
     > .figcaptionflex
@@ -154,7 +154,7 @@ a:link {
     color: silver;
 }
 
-#GPS {
+#gps {
     float: left;
     height: 33px;
     width: 15px;
@@ -171,18 +171,18 @@ a:link {
 }
 
 /* -------------------------------------- ZONE DE RECHERCHE ----------------------------------- */
-#flexfilterbox button {
+#flex-filter-box button {
     margin-right: 5px;
 }
 
-#flexfilterbox h2 {
+#flex-filter-box h2 {
     margin-right: 50px;
     padding-top: 8px;
 }
 
 /* BARRE DE RECHERCHE */
 
-#Marseille {
+#marseille {
     float: left;
     height: 43px;
     padding-left: 30px;
@@ -229,7 +229,7 @@ section p {
 
 /* FILTRES ICONES */
 
-.filterIcons {
+.filter-icons {
     text-align: center;
     border-radius: 60px 60px 60px 60px;
     background-color: #deebff;
@@ -238,13 +238,13 @@ section p {
     margin: 0 15px 0 -2px;
 }
 
-.filterIcons i {
+.filter-icons i {
     margin-right: -2px;
 }
 
 /* FILTRES CONTENEUR */
 
-.filterBox {
+.filter-box {
     border: 2px solid silver;
     border-radius: 100px 100px 100px 100px;
     font-weight: bold;
@@ -256,7 +256,7 @@ section p {
 
 /* FILTRES FLEXBOX */
 
-#flexfilterbox {
+#flex-filter-box {
     display: flex;
     padding-top: 10px;
     flex-wrap: wrap;
@@ -269,15 +269,15 @@ section p {
 
 /* FLEX DES DEUX SECTIONS */
 
-#HostSection {
+#host-section {
     display: flex;
     align-items: flex-end;
 }
 
 /* 2 SECTIONS */
 
-#HostMarseille,
-#HostPop {
+#host-marseille,
+#host-pop {
     background-color: #f2f2f2;
     border-radius: 1.5rem;
     padding: 2rem;
@@ -286,7 +286,7 @@ section p {
 
 /* CONTENEUR SECTION HEB MARSEILLE */
 
-#HostMarseille {
+#host-marseille {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -305,7 +305,7 @@ section header {
 
 /* CARTES DE HEB MARSEILLE */
 
-.HostCartesMarseille {
+.host-cartes-marseille {
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
@@ -322,7 +322,7 @@ section header {
 
 /* IMG DANS CARTES HEB MARSEILLE */
 
-.hostingCardFigureImgMarseille {
+.hosting-card-figure-img-marseille {
     height: 7rem;
     object-fit: cover;
     max-width: 100%;
@@ -333,20 +333,20 @@ section header {
 
 /* CONTENEUR FIGCAPTION CARTES HEB MARSEILLE */
 
-.hostingCardFigcaptionMarseille {
+.hosting-card-figcaption-marseille {
     margin-left: 10px;
 }
 
 /* TITRE DANS FIGCAPTION CARTES HEB MARSEILLE */
 
-.hostingCardFigcaptionTitleMarseille {
+.hosting-card-figcaption-title-marseille {
     margin-top: 0.2em;
     margin-bottom: 0;
 }
 
 /* DESCRIPTION DANS FIGCAPTION CARTES HEB MARSEILLE */
 
-.HostCartesDescMarseille {
+.host-cartes-desc-marseille {
     margin-top: 0.1em;
     margin-left: 10px;
     margin-bottom: 0;
@@ -363,14 +363,14 @@ section header {
 
 /* CONTENEUR SECTION LES PLUS POP */
 
-#HostPop {
+#host-pop {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 29%;
 }
 
-.TitleGraph {
+.title-graph {
     display: flex;
     flex-direction: row;
     align-content: space-between;
@@ -378,12 +378,12 @@ section header {
     font-size: 1.1em;
 }
 
-.TitleGraph i {
+.title-graph i {
     margin-top: 7px;
 }
 /* CONTENEUR CARTES LES PLUS POP */
 
-.HostCartesPop {
+.host-cartes-pop {
     background-color: white;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #0000002e;
@@ -396,26 +396,26 @@ section header {
     margin-bottom: 30px;
 }
 
-.HostCartesPop:last-child {
+.host-cartes-pop:last-child {
     margin-bottom: 0;
 }
 
 /* CONTENEUR CARTES POP */
 
-.HostFigCartesPop {
+.host-fig-cartes-pop {
     display: flex;
 }
 
 /* CONTENEUR FLEX DES FIGCAPTION */
 
-.figcaptionflex {
+.figcaption-flex {
     display: flex;
     flex-direction: column;
 }
 
 /* CONTENEUR IMAGE CARTES POP */
 
-.hostingCardFigureImgPop {
+.hosting-card-figure-img-pop {
     height: 8.1rem;
     object-fit: cover;
     max-width: 100%;
@@ -425,20 +425,20 @@ section header {
 
 /* CONTENEUR FIGCAPTION CARTES POP */
 
-.hostingCardFigcaptionPop {
+.hosting-card-figcaption-pop {
     margin-left: 10px;
 }
 
 /* TITRES FIGCAPTION CARTES POP */
 
-.hostingCardFigcaptionTitlePop {
+.hosting-card-figcaption-title-pop {
     margin-top: 0.2em;
     margin-bottom: 0;
 }
 
 /* DESCRIPTION FIGCAPTION CARTES POP */
 
-.HostCartesDescPop {
+.host-cartes-desc-pop {
     margin-top: 0.1em;
     margin-left: 10px;
     margin-bottom: 0;
@@ -451,7 +451,7 @@ section header {
     margin-bottom: 4rem;
 }
 
-.testflex {
+.act-flex {
     box-shadow: 0 0 16px #0000002e;
     width: 50%;
     height: 550px;
@@ -461,7 +461,7 @@ section header {
     margin-right: 2.2rem;
 }
 
-.testflex2 {
+.act-flex2 {
     box-shadow: 0 0 16px #0000002e;
     height: 300px;
     display: flex;
@@ -469,7 +469,7 @@ section header {
     border-radius: 1rem;
 }
 
-.testflex3 {
+.act-flex3 {
     box-shadow: 0 0 16px #0000002e;
     height: 220px;
     display: flex;
@@ -477,13 +477,13 @@ section header {
     border-radius: 1rem;
 }
 
-.containeurPicAct {
+.containeur-pic-act {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-.activityPict {
+.activity-pict {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -491,12 +491,12 @@ section header {
     object-fit: cover;
 }
 
-.DescCardAct {
+.desc-card-act {
     font-size: 1em;
     padding: 1rem;
 }
 
-.FlexDouble {
+.flex-double {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -504,11 +504,11 @@ section header {
     margin-right: 2.2rem;
 }
 
-.ContaineurAllAct {
+.containeur-all-act {
     display: flex;
 }
 
-.FlexDouble:last-child {
+.flex-double:last-child {
     margin-right: 0;
 }
 
@@ -523,7 +523,7 @@ section header {
     height: 10rem;
 }
 
-.FooterFLex {
+.footer-flex {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -545,14 +545,14 @@ footer a {
 
 /* FOOTER FLEX */
 
-.FooterOptions {
+.footer-options {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
 }
 
-.FooterOptions ul li {
+.footer-options ul li {
     padding: 0.3rem 0 0.3rem 0;
 }
 
@@ -570,29 +570,29 @@ figure {
     }
 }
 @media screen and (max-width: 1400px) {
-    #HostSection {
+    #host-section {
         display: flex;
         align-items: center;
         flex-direction: column-reverse;
         width: 100%;
     }
 
-    #HostPop {
+    #host-pop {
         width: unset;
         margin-bottom: 20px;
         flex-direction: row;
     }
 
-    #HostMarseille {
+    #host-marseille {
         width: unset;
     }
 
-    .HostCartesPop {
+    .host-cartes-pop {
         width: 95%;
     }
 
     @media screen and (min-width: 1013px) {
-        .HostCartesPop {
+        .host-cartes-pop {
             width: 30%;
             margin-bottom: unset;
         }
@@ -600,41 +600,41 @@ figure {
 }
 
 @media screen and (max-width: 300px) {
-    .HostCartesDescPop {
+    .host-cartes-desc-pop {
         margin-bottom: -15px;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .HostCartesMarseille {
+    .host-cartes-marseille {
         min-width: 230px;
         width: 45%;
         transition: 0.8s;
         margin-bottom: 25px;
     }
 
-    .testflex {
+    .act-flex {
         width: 31.5%;
         height: 12rem;
         margin-right: 2%;
         margin-bottom: 20px;
     }
 
-    .FlexDouble {
+    .flex-double {
         width: 66.5%;
         height: 5rem;
         flex-direction: row;
         margin-right: 0;
     }
 
-    .testflex2,
-    .testflex3 {
+    .act-flex2,
+    .act-flex3 {
         height: 12rem;
         width: 50%;
         margin-right: 3%;
     }
 
-    .ContaineurAllAct {
+    .containeur-all-act {
         flex-wrap: wrap;
     }
 
@@ -642,7 +642,7 @@ figure {
         margin-top: unset;
     }
 
-    .FooterFLex {
+    .footer-fLex {
         justify-content: space-around;
         width: 100%;
         margin-left: unset;
@@ -650,10 +650,6 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
-    .containeur {
-        margin: 0;
-    }
-
     nav {
         position: relative;
         display: block;
@@ -718,7 +714,7 @@ figure {
         padding-left: 15px;
     }
 
-    #flexfilterbox h2 {
+    #flex-filter-box h2 {
         width: 100%;
         margin-bottom: 20px;
     }
@@ -727,15 +723,15 @@ figure {
         margin-top: 20px;
     }
 
-    .TitleofSection {
+    .title-of-section {
         font-size: 1.4em;
     }
 
-    #HostMarseille {
+    #host-marseille {
         background-color: white;
     }
 
-    .HostCartesMarseille {
+    .host-cartes-marseille {
         min-width: 230px;
         width: 100%;
         transition: 0.6s;
@@ -743,39 +739,39 @@ figure {
         margin-right: 0;
     }
 
-    #HostMarseille {
+    #host-marseille {
         width: unset;
         padding: 1rem;
         margin: 0;
     }
 
-    #HostSection {
+    #host-section {
         width: 100%;
         margin: 0;
     }
 
-    .testflex {
+    .act-flex {
         width: 100%;
         margin-right: unset;
         transition: 0.6s;
     }
 
-    .FlexDouble {
+    .flex-double {
         width: 100%;
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 21rem;
     }
 
-    .testflex2,
-    .testflex3 {
+    .act-flex2,
+    .act-flex3 {
         width: 100%;
         margin-right: unset;
         margin-bottom: 1rem;
         transition: 0.6s;
     }
 
-    .ContaineurAllAct {
+    .containeur-all-act {
         justify-content: center;
     }
 
@@ -783,37 +779,37 @@ figure {
         height: unset;
     }
 
-    .FooterFLex {
+    .footer-fLex {
         margin-left: unset;
         flex-wrap: wrap;
     }
 
-    .FooterOptions {
+    .footer-options {
         margin: 1.5rem;
     }
 
-    .FooterFlex1:first-child {
+    .footer-flex1:first-child {
         padding-bottom: 10px;
     }
 }
 
 @media screen and (max-width: 400px) {
-    #Marseille {
+    #marseille {
         width: 55%;
         padding-left: 20px;
     }
 
-    #HostPop {
+    #host-pop {
         border-radius: unset;
         transition: 0.3s;
         margin: unset;
     }
 
-    .filterBox {
+    .filter-box {
         margin-left: 0;
     }
 
-    #flexfilterbox button:nth-child(3) {
+    #flex-filter-box button:nth-child(3) {
         margin-right: unset;
     }
 
@@ -821,17 +817,17 @@ figure {
         font-size: 1.4em;
     }
 
-    .TitleofSection {
+    .title-of-section {
         margin-top: 20px;
     }
 
-    .FooterFLex {
+    .footer-flex {
         flex-direction: column;
         align-content: center;
         width: 75%;
     }
 
-    .FooterOptions {
+    .footer-options {
         margin: 1.5rem 0 1.5rem 0;
     }
 }
