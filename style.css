@@ -129,8 +129,8 @@ a:link {
 
 .host-cartes-marseille:nth-child(2n-8)
     > a
-    > .HostFigCartesMarseille
-    > .hostingCardFigcaptionMarseille
+    > .host-fig-cartes-marseille
+    > .hosting-card-figcaption-marseille
     > .etoiles
     > i:last-child {
     color: silver;
@@ -138,8 +138,8 @@ a:link {
 
 .host-cartes-marseille:nth-child(5)
     > a
-    > .HostFigCartesMarseille
-    > .hostingCardFigcaptionMarseille
+    > .host-fig-cartes-marseille
+    > .hosting-card-figcaption-marseille
     > .etoiles
     > i:nth-child(n + 4) {
     color: silver;
@@ -147,8 +147,8 @@ a:link {
 
 .host-cartes-pop:nth-child(n + 3)
     > a
-    > .HostFigCartesPop
-    > .figcaptionflex
+    > .host-fig-cartes-pop
+    > .figcaption-flex
     > .etoiles
     > i:last-child {
     color: silver;
