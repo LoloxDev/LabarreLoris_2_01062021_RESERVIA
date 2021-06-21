@@ -11,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Nav */
@@ -67,10 +68,6 @@ section {
 
 /* ICONES */
 
-i {
-    margin-right: 1em;
-}
-
 /* TITRES H1*/
 
 h1 {
@@ -93,7 +90,7 @@ article:hover,
 
 /* LIENS DEJA VU */
 
-a:visited {
+a {
     color: black;
 }
 
@@ -105,26 +102,20 @@ a:link {
 
 /* ICONES */
 
-#logo-info {
+.info i {
     color: #0065fc;
     border: 1px solid silver;
+    width: 25px;
+    height: 25px;
+    border-radius: 150px;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 15px;
     float: left;
-    width: 20px;
-    height: 26px;
-    padding-top: 8px;
-    padding-left: 14px;
-    border-radius: 150px 150px 150px 150px;
-    position: relative;
-    bottom: 8px;
-    margin-right: 20px;
-    margin-top: 3px;
 }
 
 .etoiles {
     color: #0065fc;
-    letter-spacing: -10px;
-    padding-top: 3px;
-    margin-left: 10px;
 }
 
 .host-cartes-marseille:nth-child(2n-8)
@@ -155,19 +146,20 @@ a:link {
 }
 
 #gps {
-    float: left;
-    height: 33px;
-    width: 15px;
-    padding-top: 12px;
-    padding-left: 20px;
-    padding-right: 13px;
-    padding-bottom: 0;
+    height: 40px;
+    width: 40px;
     background-color: #f2f2f2;
     border-radius: 15px 0px 0px 15px;
+    line-height: 40px;
+    text-align: center;
 }
 
 .search-btn > i {
     display: none;
+}
+
+#search {
+    display: flex;
 }
 
 /* -------------------------------------- ZONE DE RECHERCHE ----------------------------------- */
@@ -183,15 +175,13 @@ a:link {
 /* BARRE DE RECHERCHE */
 
 #marseille {
-    float: left;
-    height: 43px;
-    padding-left: 30px;
+    height: 40px;
+    padding: 0 20px;
     font-family: "Raleway";
     font-size: 1.1em;
-    border-radius: 3px 3px 3px 3px;
     width: 200px;
-    border-left: 0;
-    border-right: 0;
+    border-left: none;
+    border-right: none;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
 }
@@ -205,14 +195,15 @@ a:link {
 /* BOUTON RECHERCHER */
 
 .search-btn {
-    float: left;
-    height: 45px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
     background-color: #0065fc;
     color: white;
     font-size: 1.1em;
     border: none;
     width: 150px;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
     font-family: "Raleway";
@@ -222,7 +213,7 @@ a:link {
 
 /* --------------------------------------------FILTRES------------------------------------------------- */
 
-section p {
+.headsection p {
     margin: 20px 0 20px 0;
     width: 100%;
 }
@@ -231,27 +222,41 @@ section p {
 
 .filter-icons {
     text-align: center;
-    border-radius: 60px 60px 60px 60px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
     background-color: #deebff;
     color: #0065fc;
-    padding: 18px;
-    margin: 0 15px 0 -2px;
+    margin: 0;
 }
 
 .filter-icons i {
     margin-right: -2px;
 }
 
+.filter-icons span {
+    padding: 0 10px;
+}
+
 /* FILTRES CONTENEUR */
 
 .filter-box {
     border: 2px solid silver;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 6px;
-    padding: 15px 20px 15px 0;
     background-color: white;
+}
+
+.filter-box span {
+    padding: 0 10px;
+}
+
+.filter-box i {
+    line-height: 40px;
 }
 
 /* FILTRES FLEXBOX */
@@ -262,7 +267,7 @@ section p {
     flex-wrap: wrap;
     max-width: 100%;
     padding: 0;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .filter-box:hover {
@@ -341,21 +346,6 @@ section header {
     margin-left: 10px;
 }
 
-/* TITRE DANS FIGCAPTION CARTES HEB MARSEILLE */
-
-.hosting-card-figcaption-title-marseille {
-    margin-top: 0.2em;
-    margin-bottom: 0;
-}
-
-/* DESCRIPTION DANS FIGCAPTION CARTES HEB MARSEILLE */
-
-.host-cartes-desc-marseille {
-    margin-top: 0.1em;
-    margin-left: 10px;
-    margin-bottom: 0;
-}
-
 /* DIV POUR "AFFICHER PLUS" */
 
 .clear {
@@ -377,7 +367,7 @@ section header {
 .title-graph {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-between;
     width: 100%;
     font-size: 1.1em;
 }
@@ -415,12 +405,18 @@ section header {
 .figcaption-flex {
     display: flex;
     flex-direction: column;
+    margin: 0px 15px;
+}
+
+.figcaption-flex .etoiles {
+    margin-left: 10px;
+    margin-top: 1rem;
 }
 
 /* CONTENEUR IMAGE CARTES POP */
 
 .hosting-card-figure-img-pop {
-    height: 8.1rem;
+    height: 7.3rem;
     object-fit: cover;
     max-width: 100%;
     width: 40%;
@@ -715,7 +711,6 @@ figure {
 
     .search-btn {
         width: 50px;
-        padding-left: 15px;
     }
 
     #flex-filter-box h2 {
