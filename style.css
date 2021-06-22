@@ -450,7 +450,7 @@ section header {
 /* ---------------------------------------------------------------- SECTION ACTIVITES ---------------------------------------------------------------------------- */
 
 .activity {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .act-flex {
@@ -520,13 +520,14 @@ section header {
 
 #footer {
     background-color: #f2f2f2;
-    margin-top: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
         "header1 header2 header3"
         "footer1 footer2 footer3";
+    grid-gap: 20px;
+    padding: 20px;
 }
 
 .footer-title1 {
@@ -552,6 +553,10 @@ section header {
 #footer ul {
     list-style-type: none;
     padding: 0px;
+}
+
+#footer ul li {
+    margin: 10px 0;
 }
 
 /* figures */
@@ -606,7 +611,7 @@ figure {
 @media screen and (max-width: 1000px) {
     .host-cartes-marseille {
         min-width: 230px;
-        width: 45%;
+        width: 47%;
         transition: 0.8s;
         margin-bottom: 25px;
     }
@@ -716,6 +721,7 @@ figure {
 
     #host-marseille {
         background-color: white;
+        justify-content: center;
     }
 
     .host-cartes-marseille {
@@ -760,6 +766,17 @@ figure {
 
     .containeur-all-act {
         justify-content: center;
+    }
+
+    #footer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header1"
+            "footer1"
+            "header2"
+            "footer2"
+            "header3"
+            "footer3";
     }
 }
 
