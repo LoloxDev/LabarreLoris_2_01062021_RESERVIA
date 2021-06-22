@@ -207,6 +207,7 @@ a:link {
     cursor: pointer;
     font-weight: bold;
     font-family: "Raleway";
+    margin-left: -8px;
 }
 
 /* BOUTON RECHERCHER ( LOUPE ) */
@@ -278,6 +279,10 @@ a:link {
 
 /* FLEX DES DEUX SECTIONS */
 
+article {
+    font-size: 0.9em;
+}
+
 #host-section {
     display: flex;
     align-items: flex-end;
@@ -298,7 +303,6 @@ a:link {
 #host-marseille {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: 69%;
     margin-right: 30px;
 }
@@ -320,7 +324,7 @@ section header {
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
-    width: 30%;
+    width: 31.5%;
     padding: 0.4em;
     height: 185px;
     min-width: 230px;
@@ -351,7 +355,6 @@ section header {
 .clear {
     display: block;
     width: 100%;
-    margin: 8px;
 }
 /*---------------------------------------------------SECTION LES PLUS POPULAIRES-------------------------------------------------------------------------*/
 
@@ -405,12 +408,12 @@ section header {
 .figcaption-flex {
     display: flex;
     flex-direction: column;
-    margin: 0px 15px;
+    margin: 0px 5px;
 }
 
 .figcaption-flex .etoiles {
     margin-left: 10px;
-    margin-top: 1rem;
+    margin-top: 2.3rem;
 }
 
 /* CONTENEUR IMAGE CARTES POP */
@@ -447,7 +450,6 @@ section header {
 /* ---------------------------------------------------------------- SECTION ACTIVITES ---------------------------------------------------------------------------- */
 
 .activity {
-    margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
@@ -517,43 +519,28 @@ section header {
 /* CONTENEUR FOOTER */
 
 #footer {
-    width: 100%;
     background-color: #f2f2f2;
     margin-top: 6rem;
-    height: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header"
+        "footer footer footer";
 }
 
-.footer-flex {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 70%;
-    margin-left: 70px;
-    height: 100%;
+.footer-title {
+    grid-column-start: col-start 2;
+    grid-area: header;
+    width: 25%;
+}
+
+.footer-options {
+    grid-area: footer;
 }
 
 #footer li {
     list-style: none;
-}
-
-/* FOOTER LIENS */
-
-footer a {
-    color: black;
-    font-size: 0.9em;
-}
-
-/* FOOTER FLEX */
-
-.footer-options {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-}
-
-.footer-options ul li {
-    padding: 0.3rem 0 0.3rem 0;
 }
 
 /* figures */
@@ -636,16 +623,6 @@ figure {
 
     .containeur-all-act {
         flex-wrap: wrap;
-    }
-
-    #footer {
-        margin-top: unset;
-    }
-
-    .footer-fLex {
-        justify-content: space-around;
-        width: 100%;
-        margin-left: unset;
     }
 }
 
@@ -773,23 +750,6 @@ figure {
     .containeur-all-act {
         justify-content: center;
     }
-
-    #footer {
-        height: unset;
-    }
-
-    .footer-fLex {
-        margin-left: unset;
-        flex-wrap: wrap;
-    }
-
-    .footer-options {
-        margin: 1.5rem;
-    }
-
-    .footer-flex1:first-child {
-        padding-bottom: 10px;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -818,15 +778,5 @@ figure {
 
     .title-of-section {
         margin-top: 20px;
-    }
-
-    .footer-flex {
-        flex-direction: column;
-        align-content: center;
-        width: 75%;
-    }
-
-    .footer-options {
-        margin: 1.5rem 0 1.5rem 0;
     }
 }
