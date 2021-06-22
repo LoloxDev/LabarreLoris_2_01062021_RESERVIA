@@ -525,22 +525,33 @@ section header {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "header header header"
-        "footer footer footer";
+        "header1 header2 header3"
+        "footer1 footer2 footer3";
 }
 
-.footer-title {
-    grid-column-start: col-start 2;
-    grid-area: header;
-    width: 25%;
+.footer-title1 {
+    grid-area: header1;
+}
+.footer-title2 {
+    grid-area: header2;
+}
+.footer-title3 {
+    grid-area: header3;
 }
 
-.footer-options {
-    grid-area: footer;
+.footer-options1 {
+    grid-area: footer1;
+}
+.footer-options2 {
+    grid-area: footer2;
+}
+.footer-options3 {
+    grid-area: footer3;
 }
 
-#footer li {
-    list-style: none;
+#footer ul {
+    list-style-type: none;
+    padding: 0px;
 }
 
 /* figures */
