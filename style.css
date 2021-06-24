@@ -129,6 +129,7 @@ a:link {
     > .etoiles
     > i:last-child {
     color: silver;
+    margin-left: -3.5px;
 }
 
 .host-cartes-marseille:nth-child(5)
@@ -140,6 +141,15 @@ a:link {
     color: silver;
 }
 
+.host-cartes-marseille:nth-child(5)
+    > a
+    > .host-fig-cartes-marseille
+    > .hosting-card-figcaption-marseille
+    > .etoiles
+    > i:nth-child(4) {
+    margin-left: -3.5px;
+}
+
 .host-cartes-pop:nth-child(n + 3)
     > a
     > .host-fig-cartes-pop
@@ -147,6 +157,7 @@ a:link {
     > .etoiles
     > i:last-child {
     color: silver;
+    margin-left: -3.5px;
 }
 
 #gps {
@@ -777,9 +788,5 @@ figure {
 
     h1 {
         font-size: 1.4em;
-    }
-
-    .title-of-section {
-        margin-top: 20px;
     }
 }
