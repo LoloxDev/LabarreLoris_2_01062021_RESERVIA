@@ -33,6 +33,10 @@ nav ul {
     padding: 3rem 3rem 0 3rem;
 }
 
+.nav-link:nth-child(0) {
+    color: #0065fc;
+}
+
 .nav-login,
 .nav-login:visited {
     padding: 6rem 1.5rem 0 3rem;
@@ -149,7 +153,7 @@ a:link {
     height: 40px;
     width: 40px;
     background-color: #f2f2f2;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 10px 0 0 10px;
     line-height: 40px;
     text-align: center;
 }
@@ -163,9 +167,6 @@ a:link {
 }
 
 /* -------------------------------------- ZONE DE RECHERCHE ----------------------------------- */
-#flex-filter-box button {
-    margin-right: 5px;
-}
 
 #flex-filter-box h2 {
     margin-right: 50px;
@@ -202,12 +203,15 @@ a:link {
     color: white;
     font-size: 1.1em;
     border: none;
-    width: 150px;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
     font-family: "Raleway";
-    margin-left: -8px;
+    margin-left: -10px;
+}
+
+.search-btn span {
+    padding: 0 20px;
 }
 
 /* BOUTON RECHERCHER ( LOUPE ) */
@@ -221,22 +225,6 @@ a:link {
 
 /* FILTRES ICONES */
 
-.filter-icons {
-    text-align: center;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    display: inline-block;
-    background-color: #deebff;
-    color: #0065fc;
-    margin: 0;
-}
-
-.filter-icons i {
-    margin-right: -2px;
-}
-
 .filter-icons span {
     padding: 0 10px;
 }
@@ -248,7 +236,7 @@ a:link {
     border-radius: 30px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 6px;
+    margin: 0 10px 10px 0;
     background-color: white;
 }
 
@@ -258,6 +246,15 @@ a:link {
 
 .filter-box i {
     line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    display: inline-block;
+    background-color: #deebff;
+    color: #0065fc;
+    margin: -2px;
 }
 
 /* FILTRES FLEXBOX */
@@ -347,7 +344,7 @@ section header {
 /* CONTENEUR FIGCAPTION CARTES HEB MARSEILLE */
 
 .hosting-card-figcaption-marseille {
-    margin-left: 10px;
+    padding: 0 10px;
 }
 
 /* DIV POUR "AFFICHER PLUS" */
@@ -369,14 +366,12 @@ section header {
 
 .title-graph {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    font-size: 1.1em;
+    align-items: center;
 }
 
 .title-graph i {
-    margin-top: 7px;
+    font-size: 20px;
 }
 /* CONTENEUR CARTES LES PLUS POP */
 
@@ -408,12 +403,13 @@ section header {
 .figcaption-flex {
     display: flex;
     flex-direction: column;
-    margin: 0px 5px;
+    padding: 5px 10px;
+    position: relative;
 }
 
 .figcaption-flex .etoiles {
-    margin-left: 10px;
-    margin-top: 2.3rem;
+    position: absolute;
+    bottom: 10px;
 }
 
 /* CONTENEUR IMAGE CARTES POP */
@@ -424,27 +420,6 @@ section header {
     max-width: 100%;
     width: 40%;
     border-radius: 1rem 0rem 0rem 1rem;
-}
-
-/* CONTENEUR FIGCAPTION CARTES POP */
-
-.hosting-card-figcaption-pop {
-    margin-left: 10px;
-}
-
-/* TITRES FIGCAPTION CARTES POP */
-
-.hosting-card-figcaption-title-pop {
-    margin-top: 0.2em;
-    margin-bottom: 0;
-}
-
-/* DESCRIPTION FIGCAPTION CARTES POP */
-
-.host-cartes-desc-pop {
-    margin-top: 0.1em;
-    margin-left: 10px;
-    margin-bottom: 0;
 }
 
 /* ---------------------------------------------------------------- SECTION ACTIVITES ---------------------------------------------------------------------------- */
@@ -669,8 +644,12 @@ figure {
         right: 0;
     }
 
-    .nav-link:nth-child(1),
-    .nav-link:nth-child(2) {
+    .nav-link:first-child {
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+    }
+
+    .nav-link:last-child {
         border-top: none;
         border-bottom: 2px solid #f2f2f2;
     }
@@ -703,7 +682,7 @@ figure {
     }
 
     .search-btn {
-        width: 50px;
+        width: 40px;
     }
 
     #flex-filter-box h2 {
@@ -734,7 +713,7 @@ figure {
 
     #host-marseille {
         width: unset;
-        padding: 1rem;
+        padding: 2rem;
         margin: 0;
     }
 
@@ -782,7 +761,7 @@ figure {
 
 @media screen and (max-width: 400px) {
     #marseille {
-        width: 60%;
+        width: calc(100% - 70px);
         padding-left: 20px;
     }
 
@@ -790,10 +769,6 @@ figure {
         border-radius: unset;
         transition: 0.3s;
         margin: unset;
-    }
-
-    .filter-box {
-        margin-left: 0;
     }
 
     #flex-filter-box button:nth-child(3) {
