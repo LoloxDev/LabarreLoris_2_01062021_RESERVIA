@@ -16,7 +16,7 @@
     padding: 0 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 150px 25px 25px 150px;
-    grid-gap: 50px;
+    grid-gap: 35px;
     grid-template-areas:
         "header header header header"
         "act-flex1 act-flex2 act-flex4 act-flex6"
@@ -62,9 +62,8 @@ a {
 }
 
 .desc-card-act {
-    font-size: 1em;
     line-height: 35px;
-    margin-left: 20px;
+    padding: 0 10px;
     border-radius: 0 0 1rem 1rem;
     height: 50px;
     font-weight: bold;
@@ -80,4 +79,33 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+    .activity {
+        min-width: 600px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        justify-content: center;
+        grid-gap: 10px;
+        grid-template-areas: unset;
+        grid-template-rows: unset;
+    }
+
+    header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .act-flex1,
+    .act-flex2,
+    .act-flex3,
+    .act-flex4,
+    .act-flex5,
+    .act-flex6 {
+        width: 300px;
+        height: 200px;
+        grid-area: unset;
+    }
 }
