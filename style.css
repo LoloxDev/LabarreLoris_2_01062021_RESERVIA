@@ -33,7 +33,13 @@ nav ul {
     padding: 3rem 3rem 0 3rem;
 }
 
-.nav-link:nth-child(0) {
+header > nav > ul > li:first-child > .nav-link {
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+}
+
+header > nav > ul > li:nth-child(2) > .nav-link:hover {
+    border-top: 3px solid #0065fc;
     color: #0065fc;
 }
 
@@ -41,12 +47,6 @@ nav ul {
 .nav-login:visited {
     padding: 6rem 1.5rem 0 3rem;
     color: #0065fc;
-}
-
-.nav-link:hover {
-    color: #0065fc;
-    border-top: 3px solid #0065fc;
-    transition: 0.1s;
 }
 
 /* TEXTE GRAS */
@@ -181,7 +181,7 @@ a:link {
 
 #flex-filter-box h2 {
     margin-right: 50px;
-    padding-top: 8px;
+    line-height: 35px;
 }
 
 /* BARRE DE RECHERCHE */
@@ -214,7 +214,7 @@ a:link {
     color: white;
     font-size: 1.1em;
     border: none;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     cursor: pointer;
     font-weight: bold;
     font-family: "Raleway";
@@ -312,7 +312,7 @@ article {
     display: flex;
     flex-wrap: wrap;
     width: 69%;
-    margin-right: 30px;
+    justify-content: space-between;
 }
 
 /* TITRE DE SECTION */
@@ -338,7 +338,6 @@ section header {
     min-width: 230px;
     max-width: 500px;
     margin-bottom: 30px;
-    margin-right: 15px;
 }
 
 /* IMG DANS CARTES HEB MARSEILLE */
@@ -371,7 +370,6 @@ section header {
 #host-pop {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     width: 29%;
 }
 
@@ -392,7 +390,7 @@ section header {
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
-    width: 98%;
+    width: 100%;
     padding: 0.4em;
     height: 130px;
     min-width: 230px;
@@ -567,6 +565,7 @@ figure {
     }
 
     #host-pop {
+        justify-content: space-between;
         width: unset;
         margin-bottom: 20px;
         flex-direction: row;
@@ -577,7 +576,7 @@ figure {
     }
 
     .host-cartes-pop {
-        width: 95%;
+        width: 100%;
     }
 
     @media screen and (min-width: 1013px) {
@@ -655,9 +654,13 @@ figure {
         right: 0;
     }
 
-    .nav-link:first-child {
-        border-top: none;
+    header > nav > ul > li:first-child > .nav-link {
+        border-top: unset;
         border-bottom: 2px solid #0065fc;
+    }
+
+    header > nav > ul > li:nth-child(2) > .nav-link:hover {
+        border-top: none;
     }
 
     .nav-link:last-child {
@@ -698,6 +701,7 @@ figure {
 
     .search-btn {
         width: 40px;
+        border-radius: 10px;
     }
 
     #flex-filter-box h2 {
