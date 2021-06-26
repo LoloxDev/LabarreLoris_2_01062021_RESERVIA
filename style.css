@@ -680,6 +680,10 @@ figure {
         right: 1rem;
     }
 
+    #marseille {
+        width: calc(100% - 70px);
+    }
+
     input:nth-child(3) {
         display: none;
     }
@@ -771,11 +775,6 @@ figure {
 }
 
 @media screen and (max-width: 400px) {
-    #marseille {
-        width: calc(100% - 70px);
-        padding-left: 20px;
-    }
-
     #host-pop {
         border-radius: unset;
         transition: 0.3s;
