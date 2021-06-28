@@ -16,12 +16,16 @@
 }
 
 /* Nav */
+#logo {
+    width: auto;
+    height: 50px;
+}
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.2rem;
+    padding: 20px;
 }
 
 nav ul {
@@ -59,7 +63,7 @@ strong {
 
 section {
     font-size: 0.95em;
-    padding: 2rem;
+    padding: 20px;
 }
 
 /* TITRES H1*/
@@ -233,7 +237,7 @@ a:link {
 
 .filter-box {
     border: 2px solid silver;
-    border-radius: 30px;
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
     margin: 0 10px 10px 0;
@@ -287,9 +291,8 @@ article {
 #host-marseille,
 #host-pop {
     background-color: #f2f2f2;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    margin: 0 2rem 1rem 2rem;
+    border-radius: 20px;
+    margin: 0 20px 1rem 20px;
 }
 
 /* CONTENEUR SECTION HEB MARSEILLE */
@@ -312,7 +315,7 @@ section header {
 
 .host-cartes-marseille {
     background-color: white;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
@@ -329,10 +332,7 @@ section header {
 .hosting-card-figure-img-marseille {
     height: 7rem;
     object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    max-height: 100%;
-    border-radius: 1rem 1rem 0 0;
+    border-radius: 20px 20px 0 0;
 }
 
 /* CONTENEUR FIGCAPTION CARTES HEB MARSEILLE */
@@ -370,7 +370,7 @@ section header {
 
 .host-cartes-pop {
     background-color: white;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     box-shadow: 0 0 16px #0000002e;
     transition-duration: 0.1s;
     cursor: pointer;
@@ -389,6 +389,7 @@ section header {
 
 .host-fig-cartes-pop {
     display: flex;
+    height: 100%;
 }
 
 /* CONTENEUR FLEX DES FIGCAPTION */
@@ -398,6 +399,7 @@ section header {
     flex-direction: column;
     padding: 5px 10px;
     position: relative;
+    width: 65%;
 }
 
 .figcaption-flex .etoiles {
@@ -408,17 +410,15 @@ section header {
 /* CONTENEUR IMAGE CARTES POP */
 
 .hosting-card-figure-img-pop {
-    height: 7.3rem;
     object-fit: cover;
     width: 35%;
-    border-radius: 1rem 0rem 0rem 1rem;
+    border-radius: 20px 0rem 0rem 20px;
 }
 
 /* ---------------------------------------------------------------- SECTION ACTIVITES ---------------------------------------------------------------------------- */
 .activity {
     margin-bottom: 50px;
     display: grid;
-    padding: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 150px 25px 25px 150px;
     grid-gap: 35px;
@@ -432,7 +432,7 @@ section header {
 
 .activity a {
     box-shadow: 0 0 16px #0000002e;
-    border-radius: 1rem;
+    border-radius: 20px;
     color: black;
     text-decoration: none;
 }
@@ -467,9 +467,9 @@ section header {
 }
 
 .desc-card-act {
-    line-height: 35px;
+    line-height: 50px;
     padding: 0 10px;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 20px 20px;
     height: 50px;
     font-weight: bold;
     font-size: 0.9em;
@@ -657,7 +657,7 @@ figure {
 
     .search-btn {
         width: 40px;
-        border-radius: 10px;
+        border-radius: 20px;
     }
 
     #flex-filter-box h2 {
