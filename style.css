@@ -70,7 +70,7 @@ section {
 
 h1 {
     font-size: 1.6em;
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 
 h2 {
@@ -223,8 +223,12 @@ a:link {
 /* TITRE */
 
 .headsection p {
-    padding: 20px 0 20px 0;
+    padding: 5px 0 30px 0;
     width: 100%;
+}
+
+.headsection p:last-child{
+    padding: 20px 0;
 }
 
 /* FILTRES ICONES */
@@ -254,7 +258,6 @@ a:link {
     border-radius: 50%;
     height: 40px;
     width: 40px;
-    line-height: 40px;
     display: inline-block;
     background-color: #deebff;
     color: #0065fc;
@@ -585,58 +588,64 @@ figure {
 
 @media screen and (max-width: 767px) {
     nav {
-        position: relative;
         display: block;
+        padding:unset;
     }
-
     nav ul {
-        margin-top: 3rem;
-        justify-content: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 70px;
+        grid-template-areas:
+            ". login"
+            "heb act";
     }
 
-    .nav-link {
-        padding: 1rem 3rem;
-        width: 1rem;
-        margin: unset;
+    .nav-link{
+        display:block;
+        padding: unset;
+        height:100%;
+        padding-top: 30px;
     }
 
-    .login-link {
-        margin: unset;
+    .nav-login, .nav-login:visited {
+        padding: unset;
     }
 
-    nav li:last-child {
-        position: absolute;
-        top: 11rem;
-        right: 0;
+    .nav-login{
+        position:relative;
+        top:40px;
+        right:20px;
+        padding: unset;
     }
 
     header > nav > ul > li:first-child > .nav-link {
-        border-top: unset;
-        border-bottom: 2px solid #0065fc;
-    }
-
-    header > nav > ul > li:nth-child(2) > .nav-link:hover {
         border-top: none;
+        border-bottom: 3px solid #0065fc;
     }
 
-    .nav-link:last-child {
+    header > nav > ul > li:nth-child(2) > .nav-link:hover{
         border-top: none;
-        border-bottom: 2px solid #f2f2f2;
+        border-bottom: 3px solid #0065fc;
     }
 
-    .nav-link:hover {
-        border-top: none;
-        border-bottom: 2px solid #0065fc;
+    .logo{
+        position:absolute;
+        padding: 0 20px;
+        top:20px;
     }
 
-    nav ul li {
-        text-align: center;
+    header > nav > ul > li:first-child {
+        grid-area: heb;
     }
 
-    .nav-login {
-        position: absolute;
-        bottom: 6.3rem;
-        right: 1rem;
+    header > nav > ul > li:nth-child(2) {
+        grid-area: act;
+    }
+
+    header > nav > ul > li:last-child {
+        grid-area: login;
+        text-align: right;
     }
 
     #marseille {
@@ -657,7 +666,7 @@ figure {
 
     .search-btn {
         width: 40px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     #flex-filter-box h2 {
@@ -665,9 +674,6 @@ figure {
         margin-bottom: 20px;
     }
 
-    h1 {
-        margin-top: 20px;
-    }
 
     .title-of-section {
         font-size: 1.4em;
