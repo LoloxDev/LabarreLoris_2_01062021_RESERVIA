@@ -16,6 +16,28 @@
 }
 
 /* Nav */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav"
+        "head"
+        "pop"
+        "heb"
+        "act"
+        "foot";
+}
+
+header {
+    grid-area: nav;
+}
+
+.headsection {
+    grid-area: head;
+}
+
 #logo {
     width: auto;
     height: 50px;
@@ -110,20 +132,6 @@ input:nth-child(3) {
     border-radius: 10px;
 }
 
-#footer {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header1"
-        "footer1"
-        "header2"
-        "footer2"
-        "header3"
-        "footer3";
-}
-
-.activity {
-}
-
 /* TEXTE GRAS */
 
 strong {
@@ -151,7 +159,7 @@ h2 {
 /* EFFETS DES CARTES AU SURVOL */
 
 article:hover,
-.activity a:hover {
+#activity a:hover {
     transition: 0.1s;
     transform: scale(1.015);
 }
@@ -360,11 +368,13 @@ article {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 20px;
+    grid-area: heb;
 }
 
 /* TITRE DE SECTION */
 
-section header {
+#host-marseille header,
+#host-pop header {
     width: 100%;
     margin-bottom: 30px;
 }
@@ -413,6 +423,7 @@ section header {
     flex-wrap: wrap;
     background-color: #f2f2f2;
     justify-content: space-between;
+    grid-area: pop;
 }
 
 .title-graph {
@@ -475,14 +486,14 @@ section header {
 
 /* ---------------------------------------------------------------- SECTION ACTIVITES ---------------------------------------------------------------------------- */
 
-.activity a {
+#activity a {
     box-shadow: 0 0 16px #0000002e;
     border-radius: 20px;
     color: black;
     text-decoration: none;
 }
 
-.activity {
+#activity {
     display: grid;
     grid-template-columns: 1fr;
 
@@ -498,6 +509,7 @@ section header {
         "act-flex6";
 
     grid-gap: 25px;
+    grid-area: act;
 }
 
 .act-flex1 {
@@ -548,6 +560,10 @@ section header {
     height: 100%;
     object-fit: cover;
 }
+
+#activity header {
+    grid-area: header;
+}
 /* ---------------------------------------------FOOTER--------------------------------------------------- */
 
 /* CONTENEUR FOOTER */
@@ -566,6 +582,8 @@ section header {
         "footer3";
     grid-gap: 20px;
     padding: 20px;
+    margin-top: 40px;
+    grid-area: foot;
 }
 
 .footer-title1 {
@@ -621,7 +639,7 @@ figure {
 }
 
 @media screen and (min-width: 700px) {
-    .activity {
+    #activity {
         grid-template-columns: 1fr 1fr 1fr;
 
         grid-template-rows: auto 150px 150px;
@@ -667,9 +685,9 @@ figure {
     }
 
     nav ul {
-        grid-template-columns: auto 60% auto auto auto;
+        grid-template-columns: 60% auto auto auto;
         grid-template-rows: 100px;
-        grid-template-areas: ". . heb act login";
+        grid-template-areas: " . heb act login";
         line-height: 100px;
     }
 
@@ -691,31 +709,43 @@ figure {
         color: #0065fc;
     }
 
+    header > nav > ul > li:nth-child(2) > .nav-link {
+        margin-top: 3px;
+    }
+
     header > nav > ul > li:nth-child(2) > .nav-link:hover {
         border-top: 3px solid #0065fc;
         border-bottom: none;
+        margin: unset;
     }
 }
 
 @media screen and (min-width: 1400px) {
-    #host-pop {
-        float: right;
-        width: 30%;
-    }
-
     .host-cartes-pop {
         width: unset;
     }
 
-    .activity {
+    #activity {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto 150px 25px 25px 150px;
         grid-gap: 35px;
         grid-template-areas:
             "header header header header"
-            "act-flex1 act-flex2 act-flex4 act-flex6"
-            "act-flex1 act-flex2 act-flex4 act-flex6"
             "act-flex1 act-flex2 act-flex4 act-flex5"
-            "act-flex1 act-flex3 act-flex4 act-flex5";
+            "act-flex1 act-flex2 act-flex4 act-flex5"
+            "act-flex1 act-flex2 act-flex4 act-flex6"
+            "act-flex1 act-flex3 act-flex4 act-flex6";
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "nav nav"
+            "head head"
+            "heb pop"
+            "act act"
+            "foot foot";
     }
 }
