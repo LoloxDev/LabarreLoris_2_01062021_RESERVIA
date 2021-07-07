@@ -1,0 +1,42 @@
+.host-cartes-marseille {
+    width: 32.5%;
+}
+
+.host-cartes-pop {
+    width: 32.5%;
+}
+
+nav ul {
+    grid-template-columns: 60% auto auto auto;
+    grid-template-rows: 100px;
+    grid-template-areas: " . heb act login";
+    line-height: 100px;
+}
+
+header > nav > ul > li:last-child {
+    text-align: unset;
+}
+
+.nav-login {
+    position: unset;
+}
+
+.nav-link {
+    padding: unset;
+}
+
+header > nav > ul > li:first-child > .nav-link {
+    border-top: 3px solid #0065fc;
+    border-bottom: none;
+    color: #0065fc;
+}
+
+header > nav > ul > li:nth-child(2) > .nav-link {
+    margin-top: 3px;
+}
+
+header > nav > ul > li:nth-child(2) > .nav-link:hover {
+    border-top: 3px solid #0065fc;
+    border-bottom: none;
+    margin: unset;
+}

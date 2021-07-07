@@ -1,0 +1,14 @@
+.host-cartes-marseille {
+    width: 49%;
+}
+
+#host-marseille {
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+#host-pop {
+    border-radius: 20px;
+    margin: 20px;
+}
