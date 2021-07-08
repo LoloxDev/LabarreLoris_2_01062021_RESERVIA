@@ -304,7 +304,7 @@ a:link {
 }
 
 .headsection p:last-child {
-    padding-top: 20px;
+    padding: 20px 0 0 0;
 }
 
 /* FILTRES ICONES */
