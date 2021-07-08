@@ -15,6 +15,7 @@ nav ul {
 
 header > nav > ul > li:last-child {
     text-align: unset;
+    padding-top: 3px;
 }
 
 .nav-login {
