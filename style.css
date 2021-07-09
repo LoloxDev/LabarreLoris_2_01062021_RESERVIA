@@ -94,7 +94,7 @@ header > nav > ul > li:nth-child(2) > .nav-link:hover {
 
 .logo {
     position: absolute;
-    padding: 0 20px;
+    padding: 0 25px;
     top: 20px;
 }
 
@@ -121,7 +121,7 @@ strong {
 
 section {
     font-size: 0.95em;
-    padding: 20px;
+    padding: 25px;
 }
 
 /* TITRES H1*/
@@ -360,7 +360,7 @@ article {
 #host-marseille header,
 #host-pop header {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* CARTES DE HEB MARSEILLE */
@@ -565,7 +565,7 @@ article {
         "header3"
         "footer3";
     grid-gap: 20px;
-    padding: 20px;
+    padding: 25px;
     margin-top: 40px;
     grid-area: foot;
 }
