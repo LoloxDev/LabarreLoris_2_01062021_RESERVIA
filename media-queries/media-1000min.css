@@ -24,6 +24,7 @@ header > nav > ul > li:last-child {
 
 .nav-link {
     padding: unset;
+    line-height: 100px;
 }
 
 header > nav > ul > li:first-child > .nav-link {
@@ -40,4 +41,9 @@ header > nav > ul > li:nth-child(2) > .nav-link:hover {
     border-top: 3px solid #0065fc;
     border-bottom: none;
     margin: unset;
+}
+
+.headsection p {
+    padding: 5px 0 20px 0;
+    width: 100%;
 }

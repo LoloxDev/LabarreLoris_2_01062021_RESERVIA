@@ -55,7 +55,7 @@ nav ul {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 70px;
+    grid-template-rows: 85px 50px;
     grid-template-areas:
         ". login"
         "heb act";
@@ -65,7 +65,7 @@ nav ul {
     display: block;
     padding: unset;
     height: 100%;
-    padding-top: 30px;
+    line-height: 50px;
 }
 
 .nav-login,
@@ -125,11 +125,6 @@ section {
 }
 
 /* TITRES H1*/
-
-h1 {
-    font-size: 1.6em;
-    padding: 20px 0 0;
-}
 
 h2 {
     font-size: 1.3em;
@@ -221,8 +216,8 @@ a:link {
 #flex-filter-box h2 {
     margin-right: 50px;
     line-height: 35px;
-    width: 100%;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 /* BARRE DE RECHERCHE */
@@ -311,7 +306,7 @@ input:nth-child(3) {
     border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 15px 0;
     background-color: white;
 }
 
@@ -337,7 +332,7 @@ input:nth-child(3) {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .filter-box:hover {

@@ -31,4 +31,9 @@
 
 .search-btn {
     width: unset;
+    border-radius: 0 10px 10px 0;
+}
+
+#flex-filter-box h2 {
+    width: unset;
 }
