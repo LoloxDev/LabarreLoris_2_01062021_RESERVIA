@@ -15,8 +15,6 @@
     font-family: "Raleway";
 }
 
-/* Nav */
-
 body {
     display: grid;
     grid-template-columns: 1fr;
@@ -29,6 +27,8 @@ body {
         "act"
         "foot";
 }
+
+/* HEADER */
 
 header {
     grid-area: nav;
@@ -109,27 +109,6 @@ header > nav > ul > li:nth-child(2) {
 header > nav > ul > li:last-child {
     grid-area: login;
     text-align: right;
-}
-
-#marseille {
-    width: calc(100% - 70px);
-}
-
-input:nth-child(3) {
-    display: none;
-}
-
-.search-btn i {
-    display: block;
-}
-
-.search-btn span {
-    display: none;
-}
-
-.search-btn {
-    width: 40px;
-    border-radius: 10px;
 }
 
 /* TEXTE GRAS */
@@ -228,8 +207,6 @@ a:link {
     margin-left: -3.5px;
 }
 
-/* -------------------------------------- ZONE DE RECHERCHE ----------------------------------- */
-
 /* ICONE GPS */
 
 #gps {
@@ -251,6 +228,7 @@ a:link {
 /* BARRE DE RECHERCHE */
 
 #marseille {
+    width: calc(100% - 70px);
     height: 40px;
     padding: 0 20px;
     font-family: "Raleway";
@@ -292,11 +270,24 @@ a:link {
     padding: 0 20px;
 }
 
-/* BOUTON RECHERCHER ( LOUPE ) */
+input:nth-child(3) {
+    display: none;
+}
 
-/* --------------------------------------------FILTRES------------------------------------------------- */
+.search-btn i {
+    display: block;
+}
 
-/* TITRE */
+.search-btn span {
+    display: none;
+}
+
+.search-btn {
+    width: 40px;
+    border-radius: 10px;
+}
+
+/* TITRES */
 
 .headsection p {
     padding: 5px 0 30px 0;
@@ -354,8 +345,6 @@ a:link {
 }
 
 /* ------------------------------------------- SECTION HEBERGEMENT A MARSEILLE ------------------------------------------------ */
-
-/* FLEX DES DEUX SECTIONS */
 
 article {
     font-size: 0.9em;
