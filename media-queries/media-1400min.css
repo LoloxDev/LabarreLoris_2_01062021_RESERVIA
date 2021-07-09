@@ -1,9 +1,5 @@
 .host-cartes-pop {
-    width: 90%;
-}
-
-#host-pop {
-    justify-content: center;
+    width: unset;
 }
 
 #activity {
